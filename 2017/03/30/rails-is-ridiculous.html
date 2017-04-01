@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Rails is Ridiculous</title>
-  <meta name="description" content="##Part 1 of many to come">
+  <meta name="description" content="Part 1 of many to come">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="speaksoftly.io/2017/03/30/rails-is-ridiculous.html">
@@ -64,24 +64,24 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>##Part 1 of many to come</p>
+    <h2 id="part-1-of-many-to-come">Part 1 of many to come</h2>
 
 <p>“Convention over configuration”. So the saying goes.</p>
 
 <p>While often applied to Rails’ ability to create a lot of functionality with relatively spares amounts of code, I also take a liking to this saying as synonymous with the principle of least surpise: code design should pack as few surprises as possible while accomplishing its goals. You take advantage of this philosophy every time you assume <code class="highlighter-rouge">to_s</code> returns a reasonable String representation of any object, or that <code class="highlighter-rouge">.nil?</code> returns a Boolean value according to whether or not ab object is <code class="highlighter-rouge">nil</code>. Technically, a codeing ne’er-do-well could easily write the <code class="highlighter-rouge">nil?</code> class to return a random number. In Ruby, they could just as eaily overwrite the <code class="highlighter-rouge">nil?</code> method on <code class="highlighter-rouge">Object</code>, which would of course screw up a lot.</p>
 
-<p>I’ve already hinted at how <a href="">Rails disobeys this principle</a> more than I’m confortable with. However I recently came upon a bug-inducing example that really took be aback. So now I’m going to write about it.</p>
+<p>I’ve already hinted at how <a href="/2016/07/28/objectification.html">Rails disobeys this principle</a> more than I’m confortable with. However I recently came upon a bug-inducing example that really took be aback. So now I’m going to write about it.</p>
 
-<p>As a convenience, I had written a <code class="highlighter-rouge">lower_bound</code>, <code class="highlighter-rouge">upper_bound</code>, and <code class="highlighter-rouge">bound</code> method into the <code class="highlighter-rouge">Numeric</code> class in an application. “But wait,” you say, “isn’t that doing exactly what just said in that post that you hate doing?” I mean, yeah, a little, but this is for convenience in a single application, not for a framework of code that will be distributed and used in other applications. It’s just easier and more fun to write <code class="highlighter-rouge">x.upper_boun(3.0)</code> than something like <code class="highlighter-rouge">Bounder.new(x).upper_bound(3.0)</code>. But no, I would never be so presumptuous in a gem for distribution. Thanks for asking.</p>
+<p>As a convenience, I had written a <code class="highlighter-rouge">lower_bound</code>, <code class="highlighter-rouge">upper_bound</code>, and <code class="highlighter-rouge">bound</code> method into the <code class="highlighter-rouge">Numeric</code> class in an application – I could just no longer abide using using the ‘min’ method to mean upped bound and <code class="highlighter-rouge">max</code> for lower bound. “But wait,” you say, “isn’t that doing exactly the objectification that you just said in that post that you hate doing?” I mean, yeah, a little, but this is for convenience in a specific application, not for a gem or framework that will be distributed and imported in other applications. It’s just easier and more fun to write <code class="highlighter-rouge">x.upper_bound(3.0)</code> than something like <code class="highlighter-rouge">Bounder.new(x).upper_bound(3.0)</code>. But no, I would never be so presumptuous in a gem for distribution, thanks for asking.</p>
 
-<p>Anyway, to the point. I wanted to expand this method to <code class="highlighter-rouge">DateTime</code> objects as well. So where to put it? Our app uses time zones extensively, so <code class="highlighter-rouge">ActiveSupport::TimeWithZone</code> as well as plain old <code class="highlighter-rouge">Time</code> need this method.</p>
+<p>Anyway, to the point. I wanted to expand this method to <code class="highlighter-rouge">DateTime</code> objects as well. So where to put it? Our app uses time zones extensively, so <code class="highlighter-rouge">ActiveSupport::TimeWithZone</code> as well as plain old <code class="highlighter-rouge">Time</code> need this method. Luckily:</p>
 
 <div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="no">Time</span><span class="p">.</span><span class="nf">zone</span><span class="p">.</span><span class="nf">now</span><span class="p">.</span><span class="nf">is_a?</span><span class="p">(</span><span class="no">Time</span><span class="p">)</span>
 <span class="c1"># =&gt; true</span>
 </code></pre>
 </div>
 
-<p>Wonderful! Just put it on <code class="highlighter-rouge">Time</code> and we’re set! I do so with a core_ext/time.rb file. But then I notice something funny:</p>
+<p>Wonderful! Just put it on <code class="highlighter-rouge">Time</code> and we’re set! I do so with a <code class="highlighter-rouge">core_ext/time.rb</code> file. But then I notice something funny:</p>
 
 <div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="no">Time</span><span class="p">.</span><span class="nf">zone</span><span class="p">.</span><span class="nf">now</span>
 <span class="c1"># =&gt; Thu, 30 Mar 2017 18:08:29 EDT -04:00</span>
@@ -92,7 +92,7 @@
 </code></pre>
 </div>
 
-<p>Huh? Lower-bounding by a day ago worked as expected (returned now), but lower-bounding by half an hour ago returns half an hour ago? I could have investigated further to discover that the 4-hour time zone shift was the cutoff for this weird behavior, but this time I went straight for the pry:</p>
+<p>Huh? Lower-bounding by a day ago worked as expected (no change), but lower-bounding by half an hour ago returns half an hour ago? I could have probed further to discover that the 4-hour time zone shift was the cutoff for this weird behavior, but this time I went straight for the pry:</p>
 
 <div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="mi">2</span><span class="o">.</span><span class="mi">3</span><span class="o">.</span><span class="mi">3</span> <span class="p">:</span><span class="mo">001</span> <span class="o">&gt;</span> <span class="no">Time</span><span class="p">.</span><span class="nf">zone</span><span class="p">.</span><span class="nf">now</span><span class="p">.</span><span class="nf">lower_bound</span><span class="p">(</span><span class="mi">30</span><span class="p">.</span><span class="nf">minutes</span><span class="p">.</span><span class="nf">ago</span><span class="p">)</span>
 
@@ -107,77 +107,87 @@
     <span class="mi">12</span><span class="p">:</span>   <span class="k">end</span>
     <span class="mi">13</span><span class="p">:</span> <span class="k">end</span>
 
-<span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="n">pry</span><span class="p">(</span><span class="c1">#&lt;Time&gt;)&gt; self &lt; bound</span>
-<span class="o">=&gt;</span> <span class="kp">true</span>
-<span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="n">pry</span><span class="p">(</span><span class="c1">#&lt;Time&gt;)&gt; self</span>
-<span class="o">=&gt;</span> <span class="mi">2017</span><span class="o">-</span><span class="mo">03</span><span class="o">-</span><span class="mi">30</span> <span class="mi">18</span><span class="p">:</span><span class="mi">46</span><span class="p">:</span><span class="mi">45</span> <span class="no">UTC</span>
-<span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="n">pry</span><span class="p">(</span><span class="c1">#&lt;Time&gt;)&gt; self.class</span>
-<span class="o">=&gt;</span> <span class="no">Time</span>
-<span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="n">pry</span><span class="p">(</span><span class="c1">#&lt;Time&gt;)&gt; bound.class</span>
-<span class="o">=&gt;</span> <span class="no">ActiveSupport</span><span class="o">::</span><span class="no">TimeWithZone</span>
-</code></pre>
-</div>
-
-<p>To summarize, the object returned by <code class="highlighter-rouge">Time.zone.now</code> is evaluating as less than <code class="highlighter-rouge">30.minutes.ago</code>, because when evaluating this line of code, <code class="highlighter-rouge">self</code> is being treated as a regular <code class="highlighter-rouge">Time</code> object, converted into UTC, and being evaluated numerically without knowldege of time zones.</p>
-
-<p>Why on earth would that be? Let’s sanity check how we’re getting into this method:</p>
-
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code> <span class="o">=&gt;</span> <span class="no">Thu</span><span class="p">,</span> <span class="mi">30</span> <span class="no">Mar</span> <span class="mi">2017</span> <span class="mi">18</span><span class="p">:</span><span class="mi">16</span><span class="p">:</span><span class="mi">45</span> <span class="no">EDT</span> <span class="o">-</span><span class="mo">04</span><span class="p">:</span><span class="mo">00</span>
-<span class="no">Time</span><span class="p">.</span><span class="nf">zone</span><span class="p">.</span><span class="nf">now</span><span class="p">.</span><span class="nf">method</span><span class="p">(</span><span class="ss">:lower_bound</span><span class="p">).</span><span class="nf">source_location</span>
-<span class="c1"># =&gt; nil</span>
-<span class="no">Time</span><span class="p">.</span><span class="nf">now</span><span class="p">.</span><span class="nf">method</span><span class="p">(</span><span class="ss">:lower_bound</span><span class="p">).</span><span class="nf">source_location</span>
-<span class="c1"># =&gt; ["/Users/andrew/3p/app3/lib/boundable.rb", 6]</span>
-<span class="no">Time</span><span class="p">.</span><span class="nf">zone</span><span class="p">.</span><span class="nf">now</span><span class="p">.</span><span class="nf">method</span><span class="p">(</span><span class="ss">:lower_bound</span><span class="p">).</span><span class="nf">owner</span>
+<span class="nb">self</span>
+<span class="c1"># =&gt; 2017-03-30 18:46:45 UTC</span>
+<span class="n">bound</span>
+<span class="c1"># =&gt; Thu, 30 Mar 2017 18:16:45 EDT -04:00</span>
+<span class="nb">self</span> <span class="o">&lt;</span> <span class="n">bound</span>
+<span class="c1"># =&gt; true</span>
+<span class="nb">self</span><span class="p">.</span><span class="nf">class</span>
+<span class="c1"># =&gt; Time</span>
+<span class="n">bound</span><span class="p">.</span><span class="nf">class</span>
 <span class="c1"># =&gt; ActiveSupport::TimeWithZone</span>
 </code></pre>
 </div>
 
-<p>So, there’s no method source but there is an owner?? And there is a source for <code class="highlighter-rouge">Time</code>? We need more basic sanity checking:</p>
+<p>To summarize, “now” is apparently less than “30 minutes ago”. More precisely, the object returned by <code class="highlighter-rouge">Time.zone.now</code> is evaluating as less than <code class="highlighter-rouge">30.minutes.ago</code>, because when evaluating this line of code, <code class="highlighter-rouge">self</code> is a regular <code class="highlighter-rouge">Time</code> object (in UTC), and is being compared against a <code class="highlighter-rouge">ActiveSupport::TimeWithZone</code> object, but as a regular <code class="highlighter-rouge">Time</code> object it doesn’t know about time zones.</p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code> <span class="no">Time</span><span class="p">.</span><span class="nf">zone</span><span class="p">.</span><span class="nf">now</span><span class="p">.</span><span class="nf">class</span><span class="p">.</span><span class="nf">superclass</span>
- <span class="o">=&gt;</span> <span class="no">Object</span>
+<p>But why did <code class="highlighter-rouge">self</code> forget about its true identity as a <code class="highlighter-rouge">TimeWithZone</code>? Let’s sanity check how we’re getting into this method:</p>
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="no">Time</span><span class="p">.</span><span class="nf">zone</span><span class="p">.</span><span class="nf">now</span><span class="p">.</span><span class="nf">method</span><span class="p">(</span><span class="ss">:lower_bound</span><span class="p">).</span><span class="nf">owner</span>
+<span class="c1"># =&gt; ActiveSupport::TimeWithZone</span>
+<span class="no">Time</span><span class="p">.</span><span class="nf">zone</span><span class="p">.</span><span class="nf">now</span><span class="p">.</span><span class="nf">method</span><span class="p">(</span><span class="ss">:lower_bound</span><span class="p">).</span><span class="nf">source_location</span>
+<span class="c1"># =&gt; nil</span>
+<span class="no">Time</span><span class="p">.</span><span class="nf">now</span><span class="p">.</span><span class="nf">method</span><span class="p">(</span><span class="ss">:lower_bound</span><span class="p">).</span><span class="nf">source_location</span>
+<span class="c1"># =&gt; ["/Users/andrew/3p/app3/lib/boundable.rb", 6]</span>
 </code></pre>
 </div>
 
-<p>Wait, but we cofirmed that <code class="highlighter-rouge">Time.zone.now.is_a?(Time)</code>, but the class does not seem to be a descendant of <code class="highlighter-rouge">Time</code>. Let’s get to the stack trace using <code class="highlighter-rouge">caller</code> in the pry. Highlighting the relevant portion, we have:</p>
+<p>So the owner is <code class="highlighter-rouge">ActiveSupport::TimeWithZone</code>, but there’s not source location? Except there is for a regular <code class="highlighter-rouge">Time</code> object? We need more basic sanity checking:</p>
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code> <span class="no">Time</span><span class="p">.</span><span class="nf">zone</span><span class="p">.</span><span class="nf">now</span><span class="p">.</span><span class="nf">class</span><span class="p">.</span><span class="nf">superclass</span>
+ <span class="o">=&gt;</span> <span class="no">Object</span>
+ <span class="no">Time</span><span class="p">.</span><span class="nf">zone</span><span class="p">.</span><span class="nf">now</span><span class="p">.</span><span class="nf">class</span><span class="p">.</span><span class="nf">ancestors</span><span class="p">.</span><span class="nf">include?</span><span class="p">(</span><span class="no">Time</span><span class="p">)</span>
+ <span class="o">=&gt;</span> <span class="kp">false</span>
+</code></pre>
+</div>
+
+<p>So <code class="highlighter-rouge">ActiveSupport::TimeWithZone</code> ingerits directly from <code class="highlighter-rouge">Object</code>, not from the <code class="highlighter-rouge">Time</code> class in any way. We already cofirmed that <code class="highlighter-rouge">Time.zone.now.is_a?(Time)</code>; this appears to contradict that finding. Let’s get to the stack trace using <code class="highlighter-rouge">caller</code> in the pry. Highlighting just the relevant portion, we have:</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>"/Users/andrew/3p/app3/lib/boundable.rb:7:in `lower_bound'",
 "/Users/andrew/.rvm/gems/ruby-2.3.3/gems/activesupport-4.2.3/lib/active_support/time_with_zone.rb:371:in `method_missing'",
 </code></pre>
 </div>
 
-<p>Ah, the dreaded “method_missing” pattern. I have found few valid uses of method_missing, and this is <strong>NOT</strong> one of them:
-```ruby time_with_zone.rb
-    # Send the missing method to +time+ instance, and wrap result in a new
-    # TimeWithZone with the existing +time_zone+.
-    def method_missing(sym, *args, &amp;block)
-      wrap_with_time_zone time.<strong>send</strong>(sym, *args, &amp;block)
-    rescue NoMethodError =&gt; e
-      raise e, e.message.sub(time.inspect, self.inspect), e.backtrace
-    end</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>
-Here, `time` is the instance of the `Time` object that was giving us the problem of time zone ignorance. This method_missing pattern is why the `Time.zone.now` return value was evaluating itself to be less than `30.minutes.ago`. It's basically impementing a poor-man's inheritance scheme. It works for the most part, but causes great confusion in edge cases such as this one, where evaluation just happens to forget about its time zone causing mathematical errors.  Surprise!
+<p>Ah, the dreaded “method_missing” pattern. I have found few valid uses of <code class="highlighter-rouge">method_missing</code>, and this, in ActiveSupport’s very own <code class="highlighter-rouge">time_with_zone.rb</code>, is <strong>NOT</strong> one of them:</p>
 
-Edge cases are fine to overlook in an application as a business decision, but the more general and distributed your code gets the mor important it should be to have all edge cases make some logical sense. This does not. In a package as widespread as Rails, it should be inexcusable. And I wasn't done digging: we still have this hanging fact that `Time.zone.now.is_a?(Time)`. Turns out:
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code>    <span class="c1"># Send the missing method to +time+ instance, and wrap result in a new</span>
+    <span class="c1"># TimeWithZone with the existing +time_zone+.</span>
+    <span class="k">def</span> <span class="nf">method_missing</span><span class="p">(</span><span class="n">sym</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+      <span class="n">wrap_with_time_zone</span> <span class="n">time</span><span class="p">.</span><span class="nf">__send__</span><span class="p">(</span><span class="n">sym</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+    <span class="k">rescue</span> <span class="no">NoMethodError</span> <span class="o">=&gt;</span> <span class="n">e</span>
+      <span class="k">raise</span> <span class="n">e</span><span class="p">,</span> <span class="n">e</span><span class="p">.</span><span class="nf">message</span><span class="p">.</span><span class="nf">sub</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="nf">inspect</span><span class="p">,</span> <span class="nb">self</span><span class="p">.</span><span class="nf">inspect</span><span class="p">),</span> <span class="n">e</span><span class="p">.</span><span class="nf">backtrace</span>
+    <span class="k">end</span>
+</code></pre>
+</div>
 
-```ruby
-Time.zone.now.method(:is_a?).source_location
-# =&gt; ["/Users/andrew/.rvm/gems/ruby-2.3.3/gems/activesupport-4.2.3/lib/active_support/time_with_zone.rb", 334]
+<p>Here, <code class="highlighter-rouge">time</code>, of class <code class="highlighter-rouge">Time</code>, is an instance variable belonging to <code class="highlighter-rouge">TimeWithZone</code>, and this is the object that gave us the bug by not being able to correclty compare itself to <code class="highlighter-rouge">bound</code>, above. This <code class="highlighter-rouge">method_missing</code> pattern appears to evaluate the unknown method on the zone-normalized local <code class="highlighter-rouge">Time</code> object, because the authors thought that would basically be good enough. In a way it’s impementing a poor-man’s inheritance scheme. It works for the most part, but causes slippery bugs in edge cases such as ours: the <code class="highlighter-rouge">&lt;</code> method returned the wrong result against a <code class="highlighter-rouge">TimeWithZone</code> object. Surprise!</p>
+
+<p>More generally, if <code class="highlighter-rouge">sym</code> here is a method that calls any other method overwritten by <code class="highlighter-rouge">TimeWithZone</code>, this will not work correctly. Turns out, as much as Rubyists diss inheritance, <code class="highlighter-rouge">method_missing</code> is not actually a good substitute for it. Who’d have thought?</p>
+
+<p>Edge cases are fine to overlook in an application as a business decision, but the more general and distributed your code gets the more important it should be to have all edge cases make some logical sense. This case does not. In a package as widespread as Rails, decisions like these are just sloppy.</p>
+
+<p>For our use case here, I just slapped the same methods on <code class="highlighter-rouge">ActiveSupport::TimeWithZone</code> as well, despire them already being included in <code class="highlighter-rouge">Time</code>, which we’re supposed to get for free except for the fact that someone thought <code class="highlighter-rouge">method_missing</code> was an effective substitute for inheritance.</p>
+
+<p>I wasn’t done digging: we still have this hanging fact that <code class="highlighter-rouge">Time.zone.now.is_a?(Time)</code>. Turns out:</p>
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="no">Time</span><span class="p">.</span><span class="nf">zone</span><span class="p">.</span><span class="nf">now</span><span class="p">.</span><span class="nf">method</span><span class="p">(</span><span class="ss">:is_a?</span><span class="p">).</span><span class="nf">source_location</span>
+<span class="c1"># =&gt; ["/Users/andrew/.rvm/gems/ruby-2.3.3/gems/activesupport-4.2.3/lib/active_support/time_with_zone.rb", 334]</span>
 </code></pre>
 </div>
 
 <p>You overwrote <code class="highlighter-rouge">is_a?</code>. You freakin overwrote <code class="highlighter-rouge">is_a?</code>.</p>
 
-<p><code class="highlighter-rouge">ruby time_with_zone.rb
-    # Say we're a Time to thwart type checking.
-    def is_a?(klass)
-      klass == ::Time || super
-    end
-</code></p>
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code>    <span class="c1"># Say we're a Time to thwart type checking.</span>
+    <span class="k">def</span> <span class="nf">is_a?</span><span class="p">(</span><span class="n">klass</span><span class="p">)</span>
+      <span class="n">klass</span> <span class="o">==</span> <span class="o">::</span><span class="no">Time</span> <span class="o">||</span> <span class="k">super</span>
+    <span class="k">end</span>
+</code></pre>
+</div>
 
 <p>Hacktastic.</p>
 
-<p>That burns deep, Rails. You’d be dead to me for this alone…but I just can’t quit you…</p>
+<p>That cuts deep, Rails. Too bad I just can’t quit you…</p>
 
   </div>
 
