@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="speaksoftly.io/feed.xml" rel="self" type="application/atom+xml" /><link href="speaksoftly.io/" rel="alternate" type="text/html" /><updated>2017-04-01T15:14:11-04:00</updated><id>speaksoftly.io/</id><title type="html">Speak Softly</title><subtitle>A blog about coding awesome, powerful tools...respectfully
-</subtitle><entry><title type="html">Rails is Ridiculous</title><link href="speaksoftly.io/2017/03/30/rails-is-ridiculous.html" rel="alternate" type="text/html" title="Rails is Ridiculous" /><published>2017-03-30T17:32:39-04:00</published><updated>2017-03-30T17:32:39-04:00</updated><id>speaksoftly.io/2017/03/30/rails-is-ridiculous</id><content type="html" xml:base="speaksoftly.io/2017/03/30/rails-is-ridiculous.html">&lt;h2 id=&quot;part-1-of-many-to-come&quot;&gt;Part 1 of many to come&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-01T17:45:02-04:00</updated><id>http://localhost:4000/</id><title type="html">Speak Softly</title><subtitle>A blog about coding awesome, powerful tools...respectfully
+</subtitle><entry><title type="html">Rails is Ridiculous</title><link href="http://localhost:4000/2017/03/30/rails-is-ridiculous.html" rel="alternate" type="text/html" title="Rails is Ridiculous" /><published>2017-03-30T17:32:39-04:00</published><updated>2017-03-30T17:32:39-04:00</updated><id>http://localhost:4000/2017/03/30/rails-is-ridiculous</id><content type="html" xml:base="http://localhost:4000/2017/03/30/rails-is-ridiculous.html">&lt;h2 id=&quot;part-1-of-many-to-come&quot;&gt;Part 1 of many to come&lt;/h2&gt;
 
 &lt;p&gt;“Convention over configuration”. So the saying goes.&lt;/p&gt;
 
@@ -122,7 +122,7 @@
 
 &lt;p&gt;Hacktastic.&lt;/p&gt;
 
-&lt;p&gt;That cuts deep, Rails. Too bad I just can’t quit you…&lt;/p&gt;</content><author><name></name></author><summary type="html">Part 1 of many to come</summary></entry><entry><title type="html">fluent rebasing</title><link href="speaksoftly.io/2017/01/09/fluent-rebasing.html" rel="alternate" type="text/html" title="fluent rebasing" /><published>2017-01-09T11:02:11-05:00</published><updated>2017-01-09T11:02:11-05:00</updated><id>speaksoftly.io/2017/01/09/fluent-rebasing</id><content type="html" xml:base="speaksoftly.io/2017/01/09/fluent-rebasing.html">&lt;p&gt;Recently, we’ve adopted &lt;a href=&quot;https://git-scm.com/book/en/v2/Git-Branching-Rebasing&quot;&gt;rebasing&lt;/a&gt; into our git workflow. Because of this, we now enjoy clean, traceable, and roll-backable code history. Rebasing is great. However, it comes with a few issues, which I will call “rebase trolls”. Rebase trolls love to hide out in long-running branches, waiting to make a mockery of your best intentions when you suggest “hey, we should rebase this branch first before merging it into master”.&lt;/p&gt;
+&lt;p&gt;That cuts deep, Rails. Too bad I just can’t quit you…&lt;/p&gt;</content><author><name></name></author><summary type="html">Part 1 of many to come</summary></entry><entry><title type="html">fluent rebasing</title><link href="http://localhost:4000/2017/01/09/fluent-rebasing.html" rel="alternate" type="text/html" title="fluent rebasing" /><published>2017-01-09T11:02:11-05:00</published><updated>2017-01-09T11:02:11-05:00</updated><id>http://localhost:4000/2017/01/09/fluent-rebasing</id><content type="html" xml:base="http://localhost:4000/2017/01/09/fluent-rebasing.html">&lt;p&gt;Recently, we’ve adopted &lt;a href=&quot;https://git-scm.com/book/en/v2/Git-Branching-Rebasing&quot;&gt;rebasing&lt;/a&gt; into our git workflow. Because of this, we now enjoy clean, traceable, and roll-backable code history. Rebasing is great. However, it comes with a few issues, which I will call “rebase trolls”. Rebase trolls love to hide out in long-running branches, waiting to make a mockery of your best intentions when you suggest “hey, we should rebase this branch first before merging it into master”.&lt;/p&gt;
 
 &lt;p&gt;The aim of this post is not to convince you to rebase. No, I only intend to arm you with the necessary tools to easily smack down these rebasing trolls. Starting with some of the simpler cases and progress onto the complications that inevitably arise as specs evolve and bugs are discovered, you should ultimately feel that rebasing is (almost) as easy as straight merging.&lt;/p&gt;
 
@@ -283,7 +283,7 @@
 
 &lt;p&gt;Hopefully you have a budding comfort now with rebasing and the tools and weapons you have to vanquish the rebase trolls. As you continue on your journey, know that these trolls have no power over your code workflow and cannot stand in your way to beautiful code. Godspeed, good coder. Godspeed.&lt;/p&gt;
 
-&lt;p&gt;Have any other rebasing issues you come up against? Did I say something stupid? Let me know in the comments below!&lt;/p&gt;</content><author><name></name></author><summary type="html">Recently, we’ve adopted rebasing into our git workflow. Because of this, we now enjoy clean, traceable, and roll-backable code history. Rebasing is great. However, it comes with a few issues, which I will call “rebase trolls”. Rebase trolls love to hide out in long-running branches, waiting to make a mockery of your best intentions when you suggest “hey, we should rebase this branch first before merging it into master”.</summary></entry><entry><title type="html">subjoins</title><link href="speaksoftly.io/2016/09/21/subjoins.html" rel="alternate" type="text/html" title="subjoins" /><published>2016-09-21T22:55:36-04:00</published><updated>2016-09-21T22:55:36-04:00</updated><id>speaksoftly.io/2016/09/21/subjoins</id><content type="html" xml:base="speaksoftly.io/2016/09/21/subjoins.html">&lt;h2 id=&quot;join-from-a-parent-class-to-associations-defined-in-subclasses&quot;&gt;Join from a parent class to associations defined in subclasses.&lt;/h2&gt;
+&lt;p&gt;Have any other rebasing issues you come up against? Did I say something stupid? Let me know in the comments below!&lt;/p&gt;</content><author><name></name></author><summary type="html">Recently, we’ve adopted rebasing into our git workflow. Because of this, we now enjoy clean, traceable, and roll-backable code history. Rebasing is great. However, it comes with a few issues, which I will call “rebase trolls”. Rebase trolls love to hide out in long-running branches, waiting to make a mockery of your best intentions when you suggest “hey, we should rebase this branch first before merging it into master”.</summary></entry><entry><title type="html">subjoins</title><link href="http://localhost:4000/2016/09/21/subjoins.html" rel="alternate" type="text/html" title="subjoins" /><published>2016-09-21T22:55:36-04:00</published><updated>2016-09-21T22:55:36-04:00</updated><id>http://localhost:4000/2016/09/21/subjoins</id><content type="html" xml:base="http://localhost:4000/2016/09/21/subjoins.html">&lt;h2 id=&quot;join-from-a-parent-class-to-associations-defined-in-subclasses&quot;&gt;Join from a parent class to associations defined in subclasses.&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;#tl-dr-subjoins&quot;&gt;tl; dr&lt;/a&gt;&lt;/p&gt;
 
@@ -293,29 +293,29 @@
 
 &lt;p&gt;Well for this basic case, that’s really quite easy: &lt;code class=&quot;highlighter-rouge&quot;&gt;Contractor.all.merge(project.users).joins(:profile)&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;In fact, we can easily make this another &lt;a href=&quot;blog/2016/06/03/secret/&quot;&gt;secret extension&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;In fact, we can easily make this another &lt;a href=&quot;blog/2016/06/03/secret/&quot;&gt;secret extension&lt;/a&gt; in our file &lt;code class=&quot;highlighter-rouge&quot;&gt;active_record_extension.rb&lt;/code&gt;:&lt;/p&gt;
 
-&lt;p&gt;```ruby active_record_extension.rb
-    def as_subclass(subclass)
-      subclass.all.merge(self.all)
-    end&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-Great! We're done here.
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;as_subclass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subclass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;subclass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;merge&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-Or are we?
+&lt;p&gt;Great! We’re done here.&lt;/p&gt;
 
-So you might have noticed that this method will in fact force the `type == 'Contractor'` requirement on your query even if you didn't do so youself. Well now that gets me thinking. Can we `LEFT JOIN` to profile on a collection of `User`s that aren't all `Contractor`s? That is, `User`s that happen to be `Contractor`s (and have a profile, which is all of them) will get joins to a `:profile` record, while others will have `NULL` for those joined columns.
+&lt;p&gt;Or are we?&lt;/p&gt;
 
-Why, yes. Yes we can. Once again we will make heavy use of [arel](http://jpospisil.com/2014/06/16/the-definitive-guide-to-arel-the-sql-manager-for-ruby.html), to the point that even this link doesn't cover all of what we need to know. To the point that I'm still not quite sure what to do about through associations, but maybe I'll come back another time to update this post when I figure that out.
+&lt;p&gt;So you might have noticed that this method will in fact force the &lt;code class=&quot;highlighter-rouge&quot;&gt;type == 'Contractor'&lt;/code&gt; requirement on your query even if you didn’t do so youself. Well now that gets me thinking. Can we &lt;code class=&quot;highlighter-rouge&quot;&gt;LEFT JOIN&lt;/code&gt; to profile on a collection of &lt;code class=&quot;highlighter-rouge&quot;&gt;User&lt;/code&gt;s that aren’t all &lt;code class=&quot;highlighter-rouge&quot;&gt;Contractor&lt;/code&gt;s? That is, &lt;code class=&quot;highlighter-rouge&quot;&gt;User&lt;/code&gt;s that happen to be &lt;code class=&quot;highlighter-rouge&quot;&gt;Contractor&lt;/code&gt;s (and have a profile, which is all of them) will get joins to a &lt;code class=&quot;highlighter-rouge&quot;&gt;:profile&lt;/code&gt; record, while others will have &lt;code class=&quot;highlighter-rouge&quot;&gt;NULL&lt;/code&gt; for those joined columns.&lt;/p&gt;
 
-&amp;lt;a name=&quot;tl-dr-subjoins&quot;&amp;gt;&amp;lt;/a&amp;gt;
+&lt;p&gt;Why, yes. Yes we can. Once again we will make heavy use of &lt;a href=&quot;http://jpospisil.com/2014/06/16/the-definitive-guide-to-arel-the-sql-manager-for-ruby.html&quot;&gt;arel&lt;/a&gt;, to the point that even this link doesn’t cover all of what we need to know. To the point that I’m still not quite sure what to do about through associations, but maybe I’ll come back another time to update this post when I figure that out.&lt;/p&gt;
 
-```ruby
-User.activate_secret_extensions.subjoins(:profile).to_sql
-# =&amp;gt; &quot;SELECT `users`.* FROM `users` 
-#     LEFT OUTER JOIN `admin_profiles` ON `users`.`type` IN ('Admin') AND `admin_profiles`.`user_id` = `users`.`id` 
-#     LEFT OUTER JOIN `contractor_profiles` ON `users`.`type` IN ('Contractor') AND `contractor_profiles`.`user_id` = `users`.`id`
-#     WHERE (users.deleted = false)&quot;
+&lt;p&gt;&lt;a name=&quot;tl-dr-subjoins&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;no&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;activate_secret_extensions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;subjoins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:profile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_sql&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# =&amp;gt; &quot;SELECT `users`.* FROM `users` &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#     LEFT OUTER JOIN `admin_profiles` ON `users`.`type` IN ('Admin') AND `admin_profiles`.`user_id` = `users`.`id` &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#     LEFT OUTER JOIN `contractor_profiles` ON `users`.`type` IN ('Contractor') AND `contractor_profiles`.`user_id` = `users`.`id`&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#     WHERE (users.deleted = false)&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -323,29 +323,29 @@ User.activate_secret_extensions.subjoins(:profile).to_sql
 
 &lt;p&gt;Here’s how we accomplish this:&lt;/p&gt;
 
-&lt;p&gt;```ruby active_record_extension.rb
-    # currently does not work with :through associations
-    def subjoins(association)
-      associations = descendants.map{|klass| [klass, klass.reflect_on_association(association)]}.to_h.select{|klass, assoc| assoc.present?}
-      associations.keys.none?{|assoc| assoc.is_a?(ActiveRecord::Reflection::ThroughReflection)} or raise NotImplementedError, “NIY for through associations”&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;c1&quot;&gt;# currently does not work with :through associations&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;subjoins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;association&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;associations&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;descendants&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;klass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;klass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;klass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;reflect_on_association&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;association&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]}.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;klass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assoc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assoc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;present?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;associations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;none?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;assoc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assoc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;is_a?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Reflection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ThroughReflection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;NotImplementedError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;NIY for through associations&quot;&lt;/span&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  bind_values = []
-  arel = self.all.arel
-  associations.group_by{|klass, assoc| assoc.klass.base_class}.each do |foreign_klass, assocs|
-    conditions = assocs.map do |klass, assoc|
-      join_arel = klass.joins(assoc.name).arel
-      join_condition = join_arel.join_sources.last.right.expr
-      bind_values += join_arel.bind_values
-      self.arel_table[self.inheritance_column].in([klass.name, *klass.subclasses.map(&amp;amp;:name)]).and(join_condition)
-    end.reduce(&amp;amp;:or)
+      &lt;span class=&quot;n&quot;&gt;bind_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;arel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;arel&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;associations&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;group_by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;klass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assoc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assoc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;klass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;base_class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foreign_klass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assocs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;conditions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assocs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;klass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assoc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;join_arel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;klass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;assoc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;arel&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;join_condition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;join_arel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join_sources&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;last&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;expr&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;bind_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;join_arel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;bind_values&lt;/span&gt;
+          &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;arel_table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;inheritance_column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;klass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;klass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;subclasses&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;and&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join_condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;reduce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:or&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-    arel = arel.join(foreign_klass.arel_table, Arel::Nodes::OuterJoin).on(conditions)
-  end
-  result = self.all
-  result = result.joins(*arel.join_sources) if arel.join_sources.present?
-  bind_values.each{|val| result = result.bind(val)}
-  return result
-end   end ```
+        &lt;span class=&quot;n&quot;&gt;arel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foreign_klass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;arel_table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Arel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Nodes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;OuterJoin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conditions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;all&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join_sources&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join_sources&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;present?&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;bind_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -455,53 +455,53 @@ end   end ```
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;But that’s about enough exploring of that for now. I hope to learn more about bind values and how to more robustly use them in these types of query manipulations, but I will close this post about subjoins at that. Right now I’m just psyched that I can join to subclass-specific associations from a parent class. I’ll probably only actually use the &lt;code class=&quot;highlighter-rouge&quot;&gt;as_subclass&lt;/code&gt; version, because really it’s not the responsbility of the parent class to know about the subclasses’ details, but man this was a fun exercise!&lt;/p&gt;</content><author><name></name></author><summary type="html">Join from a parent class to associations defined in subclasses.</summary></entry><entry><title type="html">objectification</title><link href="speaksoftly.io/2016/07/28/objectification.html" rel="alternate" type="text/html" title="objectification" /><published>2016-07-28T14:26:02-04:00</published><updated>2016-07-28T14:26:02-04:00</updated><id>speaksoftly.io/2016/07/28/objectification</id><content type="html" xml:base="speaksoftly.io/2016/07/28/objectification.html">&lt;h2 id=&quot;object-over-orientation&quot;&gt;Object Over-Orientation&lt;/h2&gt;
+&lt;p&gt;But that’s about enough exploring of that for now. I hope to learn more about bind values and how to more robustly use them in these types of query manipulations, but I will close this post about subjoins at that. Right now I’m just psyched that I can join to subclass-specific associations from a parent class. I’ll probably only actually use the &lt;code class=&quot;highlighter-rouge&quot;&gt;as_subclass&lt;/code&gt; version, because really it’s not the responsbility of the parent class to know about the subclasses’ details, but man this was a fun exercise!&lt;/p&gt;</content><author><name></name></author><summary type="html">Join from a parent class to associations defined in subclasses.</summary></entry><entry><title type="html">objectification</title><link href="http://localhost:4000/2016/07/28/objectification.html" rel="alternate" type="text/html" title="objectification" /><published>2016-07-28T14:26:02-04:00</published><updated>2016-07-28T14:26:02-04:00</updated><id>http://localhost:4000/2016/07/28/objectification</id><content type="html" xml:base="http://localhost:4000/2016/07/28/objectification.html">&lt;h2 id=&quot;object-over-orientation&quot;&gt;Object Over-Orientation&lt;/h2&gt;
 
-&lt;p&gt;```ruby hash.rb
-class Hash
-  def transcript_sort
-    self.sort { |a,b| a.first.to_i &amp;lt;=&amp;gt; b.first.to_i }
-  end
-end&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-What is this method doing? As its name correctly implies, its intended usage was to sort a transcript: specifically, a timed text transcript represented as a Hash with timestamps in the keys and words in the values.
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Hash&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;transcript_sort&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sort&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_i&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-So what's it doing on `Hash`?
+&lt;p&gt;What is this method doing? As its name correctly implies, its intended usage was to sort a transcript: specifically, a timed text transcript represented as a Hash with timestamps in the keys and words in the values.&lt;/p&gt;
 
-Ignoring that it effectively does the same thing as the built-in Ruby [`Hash#sort`](http://ruby-doc.org/core-1.8.7/Hash.html#method-i-sort) (&amp;lt;2.0) or the equivalent method from [`Enumerable`](http://ruby-doc.org/core-2.2.2/Enumerable.html#method-i-sort) call edon `Hash` objects (&amp;gt;=2.0), this method shouldn't be here. This code forces every single instnace of `Hash` to be aware of this method called `trancsript_sort`, even if it hasn't two ducks about this &quot;transcript&quot; object.
+&lt;p&gt;So what’s it doing on &lt;code class=&quot;highlighter-rouge&quot;&gt;Hash&lt;/code&gt;?&lt;/p&gt;
 
-`{x: 0, y: 1}.transcript_sort`. Sure.
+&lt;p&gt;Ignoring that it effectively does the same thing as the built-in Ruby &lt;a href=&quot;http://ruby-doc.org/core-1.8.7/Hash.html#method-i-sort&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Hash#sort&lt;/code&gt;&lt;/a&gt; (&amp;lt;2.0) or the equivalent method from &lt;a href=&quot;http://ruby-doc.org/core-2.2.2/Enumerable.html#method-i-sort&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Enumerable&lt;/code&gt;&lt;/a&gt; call edon &lt;code class=&quot;highlighter-rouge&quot;&gt;Hash&lt;/code&gt; objects (&amp;gt;=2.0), this method shouldn’t be here. This code forces every single instnace of &lt;code class=&quot;highlighter-rouge&quot;&gt;Hash&lt;/code&gt; to be aware of this method called &lt;code class=&quot;highlighter-rouge&quot;&gt;trancsript_sort&lt;/code&gt;, even if it hasn’t two ducks about this “transcript” object.&lt;/p&gt;
 
-Oh, but it's just one little simple method, what's the harm?
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;x:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;0,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;y:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.transcript_sort&lt;/span&gt;&lt;/code&gt;. Sure.&lt;/p&gt;
 
-The following is a real-world example from the same code base. No need to parse the method too closely, but you do get bonus points for appreciating how `prepare_interpolation` and `finalize_interpolation` are methods that were inserted into `String` for similarly specific purposes.
+&lt;p&gt;Oh, but it’s just one little simple method, what’s the harm?&lt;/p&gt;
 
-```ruby hash.rb
-class Hash
-  def split_words(paragraph_starts = [], no_break_up=false, max_word_length=32)
-    new_words = {}
-    sorted_words = self.transcript_sort
-    add_blank = false
-    sorted_words.each_with_index do |word, i|
-      current_stamp = word.first.to_i
-      parts = word.second.prepare_interpolation(no_break_up,max_word_length).split(' ')
-      parts &amp;lt;&amp;lt; &quot;&quot; if parts.empty?
-      next_stamp = (sorted_words[i+1].try(:first) || (current_stamp + parts.length * 300)).to_i
-      if parts.length == 1 &amp;amp;&amp;amp; parts.first.blank?
-        new_words[current_stamp] = '' if !!(add_blank || paragraph_starts.include?(current_stamp))
-        add_blank = false
-      else
-        increment = ((next_stamp - current_stamp) / parts.length).floor
-        for part in parts
-          new_words[current_stamp] = part.finalize_interpolation
-          current_stamp = current_stamp + increment
-        end
-        add_blank = !!(parts.last.editorial_note? or parts.last.end_of_sentence?(sorted_words[i+1].try(:second)))
-      end
-    end
-    new_words
-  end
-end
+&lt;p&gt;The following is a real-world example from the same code base. No need to parse the method too closely, but you do get bonus points for appreciating how &lt;code class=&quot;highlighter-rouge&quot;&gt;prepare_interpolation&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;finalize_interpolation&lt;/code&gt; are methods that were inserted into &lt;code class=&quot;highlighter-rouge&quot;&gt;String&lt;/code&gt; for similarly specific purposes.&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Hash&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;split_words&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;paragraph_starts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;no_break_up&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_word_length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;new_words&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sorted_words&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;transcript_sort&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;add_blank&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sorted_words&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each_with_index&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;current_stamp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_i&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;parts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;second&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;prepare_interpolation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;no_break_up&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_word_length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;parts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;empty?&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;next_stamp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sorted_words&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current_stamp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_i&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;blank?&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;new_words&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current_stamp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_blank&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;paragraph_starts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;include?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current_stamp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;add_blank&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;increment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next_stamp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current_stamp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;floor&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;part&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parts&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;new_words&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current_stamp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;part&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;finalize_interpolation&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;current_stamp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current_stamp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;increment&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;add_blank&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;last&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;editorial_note?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;last&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;end_of_sentence?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sorted_words&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:second&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;new_words&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -511,23 +511,24 @@ end
 
 &lt;p&gt;The first thing I did to this code when I had a chance was to create a &lt;code class=&quot;highlighter-rouge&quot;&gt;Transcript&lt;/code&gt; class that contained all the logic related to this transcript object. This class still stores the same data as the &lt;code class=&quot;highlighter-rouge&quot;&gt;Hash&lt;/code&gt; version, but rather than assimilating &lt;code class=&quot;highlighter-rouge&quot;&gt;Hash&lt;/code&gt;, it simply uses one as a data member. Ideally, we could have a &lt;code class=&quot;highlighter-rouge&quot;&gt;sort_words&lt;/code&gt; method here that returned another &lt;code class=&quot;highlighter-rouge&quot;&gt;Transcript&lt;/code&gt; object with the words sorted (or &lt;code class=&quot;highlighter-rouge&quot;&gt;sort_words!&lt;/code&gt; for in-place). However, for compatiblilty with more code than I could change in one sitting, I created a &lt;code class=&quot;highlighter-rouge&quot;&gt;Transcript#sorted_words&lt;/code&gt; method that returned the same array of [timestamp, words], sorted by timestamp.&lt;/p&gt;
 
-&lt;p&gt;```ruby transcript.rb
-class Transcript
-  def sorted_words
-    @words.sort_by{|time, word| time.to_i}
-  end&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Transcript&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sorted_words&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@words&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sort_by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-&lt;p&gt;# NIY in real life, but more ideal:
-  def sort_words
-    self.deep_dup.sort_words!
-  end&lt;/p&gt;
 
-&lt;p&gt;def sort_words!
-    @words.sort_by!{|time, word| time.to_i}
-    return self
-  end
-end
-```&lt;/p&gt;
+  &lt;span class=&quot;c1&quot;&gt;# NIY in real life, but more ideal:&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sort_words&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;deep_dup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sort_words!&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sort_words!&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@words&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sort_by!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;###Over-objectification&lt;/p&gt;
 
@@ -554,7 +555,7 @@ end
   &lt;li&gt;&lt;a href=&quot;https://blog.engineyard.com/2014/keeping-your-rails-controllers-dry-with-services&quot;&gt;Keeping your Rails controllers DRY with services&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://blog.steveklabnik.com/posts/2011-09-06-the-secret-to-rails-oo-design&quot;&gt;The secret to Rails OO design&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/&quot;&gt;7 ways to decompose fat ActiveRecord models&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">Object Over-Orientation</summary></entry><entry><title type="html">bulk_insert</title><link href="speaksoftly.io/2016/06/03/bulk-insert.html" rel="alternate" type="text/html" title="bulk_insert" /><published>2016-06-03T17:38:15-04:00</published><updated>2016-06-03T17:38:15-04:00</updated><id>speaksoftly.io/2016/06/03/bulk-insert</id><content type="html" xml:base="speaksoftly.io/2016/06/03/bulk-insert.html">&lt;h2 id=&quot;insert-thousands-of-records-in-an-instant-even-in-rails&quot;&gt;Insert thousands of records in an instant. Even in Rails.&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Object Over-Orientation</summary></entry><entry><title type="html">bulk_insert</title><link href="http://localhost:4000/2016/06/03/bulk-insert.html" rel="alternate" type="text/html" title="bulk_insert" /><published>2016-06-03T17:38:15-04:00</published><updated>2016-06-03T17:38:15-04:00</updated><id>http://localhost:4000/2016/06/03/bulk-insert</id><content type="html" xml:base="http://localhost:4000/2016/06/03/bulk-insert.html">&lt;h2 id=&quot;insert-thousands-of-records-in-an-instant-even-in-rails&quot;&gt;Insert thousands of records in an instant. Even in Rails.&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;#tl-dr-bulk_insert&quot;&gt;tl; dr&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Sometimes, you just need to create a lot of records.&lt;/p&gt;
@@ -569,23 +570,25 @@ end
 
 &lt;p&gt;&lt;a name=&quot;tl-dr-bulk_insert&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;```ruby active_record_extension.rb
-def bulk_insert(attribute_array)
-  return if attribute_array.empty?
-  self.connection.execute(bulk_insert_sql(attribute_array))
-end&lt;/p&gt;
+&lt;p&gt;In &lt;code class=&quot;highlighter-rouge&quot;&gt;active_record_extension.rb&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;def bulk_insert_sql(attribute_array)
-  fields = attribute_array.first.keys
-  values = attribute_array.map do |attrs|
-    attrs.keys == fields or raise ArgumentError, “Attribute array must all have the same keys. Expected #{fields * ‘, ‘}, got #{attrs.keys * ‘, ‘}”
-    fields.map{|key| self.sanitize(attrs[key])}
-  end
-  fields_string = “(“ + fields.map{|f| “&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot; + f.to_s.gsub(/&lt;/code&gt;/, “”) + “&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;} * &quot;, &quot; + &quot;)&quot;
-  values_string = values.map{|vals| &quot;(&quot; + vals * &quot;, &quot; + &quot;)&quot;} * &quot;, &quot;
-  return &quot;INSERT INTO #{self.table_name} #{fields_string} VALUES #{values_string}&quot;
-end
-&lt;/code&gt;``&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;bulk_insert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attribute_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attribute_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;empty?&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;connection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bulk_insert_sql&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attribute_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;bulk_insert_sql&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attribute_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;fields&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attribute_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;keys&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attribute_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;keys&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fields&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ArgumentError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Attribute array must all have the same keys. Expected &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fields&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;', '&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;, got &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;keys&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;', '&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;fields&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sanitize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;fields_string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;(&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fields&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;`&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;gsub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/`/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;`&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;, &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;)&quot;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;values_string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vals&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;(&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vals&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;, &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;, &quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;INSERT INTO &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fields_string&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; VALUES &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values_string&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This is a little dense, so let’s break it down:&lt;/p&gt;
 
@@ -600,7 +603,7 @@ end
 
 &lt;p&gt;Once we include these methods into ActiveRecord, it’s as simple as &lt;code class=&quot;highlighter-rouge&quot;&gt;JobAccess.bulk_insert(attributes_array)&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Be careful with this one. You can violate a lot of Rails data validations extremeley easily using this tool.&lt;/p&gt;</content><author><name></name></author><summary type="html">Insert thousands of records in an instant. Even in Rails. tl; dr</summary></entry><entry><title type="html">secret</title><link href="speaksoftly.io/2016/06/03/secret.html" rel="alternate" type="text/html" title="secret" /><published>2016-06-03T09:15:10-04:00</published><updated>2016-06-03T09:15:10-04:00</updated><id>speaksoftly.io/2016/06/03/secret</id><content type="html" xml:base="speaksoftly.io/2016/06/03/secret.html">&lt;h2 id=&quot;add-features-to-a-core-class-activerecord-without-really-adding-them&quot;&gt;Add features to a core class (ActiveRecord) without really adding them&lt;/h2&gt;
+&lt;p&gt;Be careful with this one. You can violate a lot of Rails data validations extremeley easily using this tool.&lt;/p&gt;</content><author><name></name></author><summary type="html">Insert thousands of records in an instant. Even in Rails. tl; dr</summary></entry><entry><title type="html">secret</title><link href="http://localhost:4000/2016/06/03/secret.html" rel="alternate" type="text/html" title="secret" /><published>2016-06-03T09:15:10-04:00</published><updated>2016-06-03T09:15:10-04:00</updated><id>http://localhost:4000/2016/06/03/secret</id><content type="html" xml:base="http://localhost:4000/2016/06/03/secret.html">&lt;h2 id=&quot;add-features-to-a-core-class-activerecord-without-really-adding-them&quot;&gt;Add features to a core class (ActiveRecord) without really adding them&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;#tl-dr-secret&quot;&gt;tl; dr&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I’ve been keeping a file of extensions to ActiveRecord that I find useful. I’ve blooged about one of them already. In many cases, while poking around our app in the console, I’ve wanted to use some of these features. To the extent that my toys are confined to their own modules, that’s fine, but I feel a little sketchy about adding a list of untested features to &lt;code class=&quot;highlighter-rouge&quot;&gt;ActiveRecord::Base&lt;/code&gt;. Other developers in my team start finding and using them, then we discover a bug, and I don’t have time to support it, and we have a mess. So these extensions had not, until recently made it into our app.&lt;/p&gt;
@@ -676,92 +679,94 @@ end
 
 &lt;p&gt;&lt;a name=&quot;tl-dr-secret&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;```ruby active_record_extension.rb
-module ActiveRecordExtension
-  module Base
-    def activate_secret_extensions
-      relation = self.is_a?(Class) ? self.all : self
-      relation.singleton_class.include(ActiveRecordExtension::SecretExtension)
-      return relation
-    end
-  end
-end&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;ActiveRecordExtension&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Base&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;activate_secret_extensions&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;relation&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;is_a?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;relation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;singleton_class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ActiveRecordExtension&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;SecretExtension&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relation&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-&lt;p&gt;ActiveRecord::Base.extend(ActiveRecordExtension::Base)&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-So now, 
+&lt;span class=&quot;no&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ActiveRecordExtension&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
- * All of `ActiveRecord::Base` has access to the method `activate_secret_extensions`
- * Calling `activate_secret_extensions` adds any methods defined in `ActiveRecordExtension::Base`, which is pasted below for reference.
- * ActiveRecord then for free gives us chainable methods for free -- this just just like defining class methods on `JobAccess`, except these method definitions are limited to this specific query. As a bonus, these methods do in fact propagate through the chain, so we only need to call `activate_secret_extensions` once for a given object in memory.
+&lt;p&gt;So now,&lt;/p&gt;
 
- Here's my current list of secretly-accepted extensions
+&lt;ul&gt;
+  &lt;li&gt;All of &lt;code class=&quot;highlighter-rouge&quot;&gt;ActiveRecord::Base&lt;/code&gt; has access to the method &lt;code class=&quot;highlighter-rouge&quot;&gt;activate_secret_extensions&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Calling &lt;code class=&quot;highlighter-rouge&quot;&gt;activate_secret_extensions&lt;/code&gt; adds any methods defined in &lt;code class=&quot;highlighter-rouge&quot;&gt;ActiveRecordExtension::Base&lt;/code&gt;, which is pasted below for reference.&lt;/li&gt;
+  &lt;li&gt;ActiveRecord then for free gives us chainable methods for free – this just just like defining class methods on &lt;code class=&quot;highlighter-rouge&quot;&gt;JobAccess&lt;/code&gt;, except these method definitions are limited to this specific query. As a bonus, these methods do in fact propagate through the chain, so we only need to call &lt;code class=&quot;highlighter-rouge&quot;&gt;activate_secret_extensions&lt;/code&gt; once for a given object in memory.&lt;/li&gt;
+&lt;/ul&gt;
 
-```ruby active_record_extension.rb
-module ActiveRecordExtension
-  module SecretExtension
-    def bulk_insert_sql(attribute_array)
-      fields = attribute_array.first.keys
-      values = attribute_array.map do |attrs|
-        attrs.keys == fields or raise ArgumentError, &quot;Attribute array must all have the same keys. Expected #{fields * ', '}, got #{attrs.keys * ', '}&quot;
-        fields.map{|key| self.sanitize(attrs[key])}
-      end
-      fields_string = &quot;(&quot; + fields.map{|f| &quot;`&quot; + f.to_s.gsub(/`/, &quot;&quot;) + &quot;`&quot;} * &quot;, &quot; + &quot;)&quot;
-      values_string = values.map{|vals| &quot;(&quot; + vals * &quot;, &quot; + &quot;)&quot;} * &quot;, &quot;
-      return &quot;INSERT INTO #{self.table_name} #{fields_string} VALUES #{values_string}&quot;
-    end
+&lt;p&gt;Here’s my current list of secretly-accepted extensions&lt;/p&gt;
 
-    def bulk_insert(attribute_array)
-      return if attribute_array.empty?
-      self.connection.execute(bulk_insert_sql(attribute_array))
-    end
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;ActiveRecordExtension&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;SecretExtension&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;bulk_insert_sql&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attribute_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;fields&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attribute_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;keys&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attribute_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;keys&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fields&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ArgumentError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Attribute array must all have the same keys. Expected &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fields&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;', '&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;, got &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;keys&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;', '&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;fields&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sanitize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])}&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;fields_string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;(&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fields&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;`&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;gsub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/`/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;`&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;, &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;)&quot;&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;values_string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vals&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;(&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vals&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;, &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;, &quot;&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;INSERT INTO &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;table_name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fields_string&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; VALUES &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values_string&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-    # Simple left join taking advantage of existing Rails &amp;amp; Arel code
-    def left_joins(*args)
-      inner_joins = self.joins(*args).arel.join_sources
-      left_joins = inner_joins.map do |join|
-        Arel::Nodes::OuterJoin.new(join.left, join.right)
-      end
-      self.joins(left_joins)
-    end
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;bulk_insert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attribute_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attribute_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;empty?&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;connection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bulk_insert_sql&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attribute_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-    def _unscoped_joins(*args)
-      arel = self.klass.all.arel
-      unscoped_joins = self.joins(*args).arel.join_sources.map do |join|
-        join_condition = join.right.expr.children.first
-        foreign = join_condition.left.relation
-        arel = arel.join(foreign).on(join_condition)
-      end
-      self.joins(arel.join_sources)
-    end
+    &lt;span class=&quot;c1&quot;&gt;# Simple left join taking advantage of existing Rails &amp;amp; Arel code&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;left_joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;inner_joins&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;arel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join_sources&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;left_joins&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inner_joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+        &lt;span class=&quot;no&quot;&gt;Arel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Nodes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;OuterJoin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;left_joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-    # Find records of self where no records of given association exist
-    def without(assoc_name)
-      assoc = self.reflect_on_association(assoc_name)
-      self.left_joins(assoc_name).where(assoc.table_name =&amp;gt; {assoc.klass.primary_key =&amp;gt; nil})
-    end
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;_unscoped_joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;arel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;klass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;arel&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;unscoped_joins&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;arel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join_sources&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;join_condition&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;expr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;foreign&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;join_condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;relation&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;arel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foreign&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join_condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join_sources&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-    # perform a count of results even if GROUP BY was issued
-    def outer_count
-      self.connection.execute(&quot;select COUNT(*) from (#{self.all.to_sql}) results&quot;).first.first
-    end
-  end
+    &lt;span class=&quot;c1&quot;&gt;# Find records of self where no records of given association exist&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;without&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;assoc_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;assoc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;reflect_on_association&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;assoc_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;left_joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;assoc_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;assoc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;table_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;assoc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;klass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;primary_key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-  module Base
-    def activate_secret_extensions
-      relation = self.is_a?(Class) ? self.all : self
-      relation.singleton_class.include(ActiveRecordExtension::SecretExtension)
-      return relation
-    end
-  end
+    &lt;span class=&quot;c1&quot;&gt;# perform a count of results even if GROUP BY was issued&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;outer_count&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;connection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;select COUNT(*) from (&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_sql&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;) results&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-end
+  &lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Base&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;activate_secret_extensions&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;relation&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;is_a?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;relation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;singleton_class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ActiveRecordExtension&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;SecretExtension&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relation&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
 
-ActiveRecord::Base.extend(ActiveRecordExtension::Base)
+&lt;span class=&quot;no&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;extend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ActiveRecordExtension&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">Add features to a core class (ActiveRecord) without really adding them tl; dr</summary></entry><entry><title type="html">monomorphic</title><link href="speaksoftly.io/2016/04/22/monomorphic.html" rel="alternate" type="text/html" title="monomorphic" /><published>2016-04-22T17:27:34-04:00</published><updated>2016-04-22T17:27:34-04:00</updated><id>speaksoftly.io/2016/04/22/monomorphic</id><content type="html" xml:base="speaksoftly.io/2016/04/22/monomorphic.html">&lt;h2 id=&quot;join-to-a-a-single-resource-type-in-a-polymorphic-assocaition&quot;&gt;Join to a a single resource type in a polymorphic assocaition&lt;/h2&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Add features to a core class (ActiveRecord) without really adding them tl; dr</summary></entry><entry><title type="html">monomorphic</title><link href="http://localhost:4000/2016/04/22/monomorphic.html" rel="alternate" type="text/html" title="monomorphic" /><published>2016-04-22T17:27:34-04:00</published><updated>2016-04-22T17:27:34-04:00</updated><id>http://localhost:4000/2016/04/22/monomorphic</id><content type="html" xml:base="http://localhost:4000/2016/04/22/monomorphic.html">&lt;h2 id=&quot;join-to-a-a-single-resource-type-in-a-polymorphic-assocaition&quot;&gt;Join to a a single resource type in a polymorphic assocaition&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;#tl-dr-monomorphic&quot;&gt;tl; dr&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;belongs_to :resource, polymorphic: true&lt;/code&gt; is great, but don’t tell me you’ve never wanted to scope that to &lt;code class=&quot;highlighter-rouge&quot;&gt;where(resource_type: &quot;Foo&quot;)&lt;/code&gt;. To use &lt;code class=&quot;highlighter-rouge&quot;&gt;Bar.joins(:foo)&lt;/code&gt; when &lt;code class=&quot;highlighter-rouge&quot;&gt;:foo&lt;/code&gt; is one of many resource_types.&lt;/p&gt;
@@ -772,16 +777,16 @@ ActiveRecord::Base.extend(ActiveRecordExtension::Base)
 
 &lt;p&gt;Somewhere ((here)[]?) you may have found a solution I did as well:&lt;/p&gt;
 
-&lt;p&gt;```ruby bar.rb
-class Bar
-  belongs_to :foo, -&amp;gt; { where(bars: {resource_type: ‘Foo’}) }, foreign_key: ‘resource_id’
-end&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-Yay:
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bar&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;belongs_to&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;bars: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;resource_type: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Foo'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;foreign_key: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'resource_id'&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-```ruby
-Bar.joins(:foo)
-# =&amp;gt; #&amp;lt;ActiveRecord::Relation [#&amp;lt;Bar id: 1, resource_type: &quot;Foo&quot;, resource_id: 1, foo_id: 1, deleted: false&amp;gt;]&amp;gt;
+&lt;p&gt;Yay:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;no&quot;&gt;Bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# =&amp;gt; #&amp;lt;ActiveRecord::Relation [#&amp;lt;Bar id: 1, resource_type: &quot;Foo&quot;, resource_id: 1, foo_id: 1, deleted: false&amp;gt;]&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -794,57 +799,57 @@ Bar.joins(:foo)
 
 &lt;p&gt;Huh? No column bars.resource_type? Sure: the SQL generated by the association getter method only looks for a &lt;code class=&quot;highlighter-rouge&quot;&gt;Foo&lt;/code&gt; with the matching id. It doesn’t join to, and therefore doesn’t have access to, the &lt;code class=&quot;highlighter-rouge&quot;&gt;bars&lt;/code&gt; table. However we have added a scope that references the &lt;code class=&quot;highlighter-rouge&quot;&gt;bars&lt;/code&gt; table that we are not joining to, and so the SQL statement balks. So that means the fix is simple:&lt;/p&gt;
 
-&lt;p&gt;```ruby bar.rb
-class Bar
-  belongs_to :foo, -&amp;gt; { joins(:bar).where(bars: {resource_type: ‘Foo’}) }, foreign_key: ‘resource_id’
-end&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-Provided, of course, the `:bar` assocaiton is set up correclty on class `Foo`. Note that this may be a `has_one` or a `has_many` for your application, and for the latter of course you need to `joins(:bars)` instead of `joins(:bar)`.
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bar&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;belongs_to&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;bars: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;resource_type: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Foo'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;foreign_key: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'resource_id'&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-Of course we could just use `Bar.first.resource`, but it doesn't feel right to leave this dangling error-prone method out there. 
+&lt;p&gt;Provided, of course, the &lt;code class=&quot;highlighter-rouge&quot;&gt;:bar&lt;/code&gt; assocaiton is set up correclty on class &lt;code class=&quot;highlighter-rouge&quot;&gt;Foo&lt;/code&gt;. Note that this may be a &lt;code class=&quot;highlighter-rouge&quot;&gt;has_one&lt;/code&gt; or a &lt;code class=&quot;highlighter-rouge&quot;&gt;has_many&lt;/code&gt; for your application, and for the latter of course you need to &lt;code class=&quot;highlighter-rouge&quot;&gt;joins(:bars)&lt;/code&gt; instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;joins(:bar)&lt;/code&gt;.&lt;/p&gt;
 
-Yay:
+&lt;p&gt;Of course we could just use &lt;code class=&quot;highlighter-rouge&quot;&gt;Bar.first.resource&lt;/code&gt;, but it doesn’t feel right to leave this dangling error-prone method out there.&lt;/p&gt;
 
-```ruby
-Bar.first.foo
-# =&amp;gt; #&amp;lt;Foo id: 1, deleted: false&amp;gt;
-Bar.preload(:foo).first
-# =&amp;gt; #&amp;lt;Bar id: 1, resource_type: &quot;Foo&quot;, resource_id: 1, foo_id: 1, deleted: false&amp;gt;
+&lt;p&gt;Yay:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;no&quot;&gt;Bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# =&amp;gt; #&amp;lt;Foo id: 1, deleted: false&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;Bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;preload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;first&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# =&amp;gt; #&amp;lt;Bar id: 1, resource_type: &quot;Foo&quot;, resource_id: 1, foo_id: 1, deleted: false&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;So we’re done … ? Nope. There’s one more complication. Let’s add another resource_type to the mix:&lt;/p&gt;
 
-&lt;p&gt;```ruby bar.rb
-class Bar
-  belongs_to :foo, -&amp;gt; { joins(:bar).where(bars: {resource_type: ‘Foo’}) }, foreign_key: ‘resource_id’
-  belongs_to :baz, -&amp;gt; { joins(:bar).where(bars: {resource_type: ‘Baz’}) }, foreign_key: ‘resource_id’
-end&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bar&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;belongs_to&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;bars: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;resource_type: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Foo'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;foreign_key: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'resource_id'&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;belongs_to&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:baz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;bars: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;resource_type: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Baz'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;foreign_key: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'resource_id'&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-&lt;p&gt;baz = Baz.create
-bar2 = Bar.new
-bar2.resource = baz
-bar2.save&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-The existence of bar2 is critical in disvoering the following bug, which we'll explain just below.
-
-Boo:
-
+&lt;span class=&quot;n&quot;&gt;baz&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Baz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;create&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;bar2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;bar2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resource&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;baz&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;bar2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;save&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;p&gt;Bar.first&lt;/p&gt;
-&lt;h1 id=&quot;-bar-id-1-resource_type-foo-resource_id-1-foo_id-1-deleted-false&quot;&gt;=&amp;gt; #&amp;lt;Bar id: 1, resource_type: “Foo”, resource_id: 1, foo_id: 1, deleted: false&amp;gt;&lt;/h1&gt;
-&lt;p&gt;Bar.first.resource&lt;/p&gt;
-&lt;h1 id=&quot;-foo-id-1-deleted-false&quot;&gt;=&amp;gt; #&amp;lt;Foo id: 1, deleted: false&amp;gt;&lt;/h1&gt;
-&lt;p&gt;Bar.first.foo&lt;/p&gt;
-&lt;h1 id=&quot;-foo-id-1-deleted-false-1&quot;&gt;=&amp;gt; #&amp;lt;Foo id: 1, deleted: false&amp;gt;&lt;/h1&gt;
-&lt;p&gt;Bar.first.baz&lt;/p&gt;
-&lt;h1 id=&quot;-baz-id-1&quot;&gt;=&amp;gt; #&amp;lt;Baz id: 1&amp;gt;&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-`Bar.first`'s resource is a `Foo`, not a `Baz`, and yet it's incorrectly returning to us a `Baz` when we ask for it! `Bar.first` does not have a `Baz`, so we should be getting `nil` here. What's happening is that when ActiveRecord is generates the query for `bar.baz`, once again it drives the query off of the `bazes` table with poor regard for the `bars` table:
 
-```sql
-SELECT  `bazs`.* FROM `bazs` INNER JOIN `bars` ON `bars`.`resource_id` = `bazs`.`id` AND `bars`.`deleted` = 0 AND `bars`.`resource_type` = 'Baz' WHERE `bazs`.`id` = 1 AND `bars`.`resource_type` = 'Baz' LIMIT 1
+&lt;p&gt;The existence of bar2 is critical in disvoering the following bug, which we’ll explain just below.&lt;/p&gt;
+
+&lt;p&gt;Boo:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Bar.first
+# =&amp;gt; #&amp;lt;Bar id: 1, resource_type: &quot;Foo&quot;, resource_id: 1, foo_id: 1, deleted: false&amp;gt;
+Bar.first.resource
+# =&amp;gt; #&amp;lt;Foo id: 1, deleted: false&amp;gt;
+Bar.first.foo
+# =&amp;gt; #&amp;lt;Foo id: 1, deleted: false&amp;gt;
+Bar.first.baz
+# =&amp;gt; #&amp;lt;Baz id: 1&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Bar.first&lt;/code&gt;’s resource is a &lt;code class=&quot;highlighter-rouge&quot;&gt;Foo&lt;/code&gt;, not a &lt;code class=&quot;highlighter-rouge&quot;&gt;Baz&lt;/code&gt;, and yet it’s incorrectly returning to us a &lt;code class=&quot;highlighter-rouge&quot;&gt;Baz&lt;/code&gt; when we ask for it! &lt;code class=&quot;highlighter-rouge&quot;&gt;Bar.first&lt;/code&gt; does not have a &lt;code class=&quot;highlighter-rouge&quot;&gt;Baz&lt;/code&gt;, so we should be getting &lt;code class=&quot;highlighter-rouge&quot;&gt;nil&lt;/code&gt; here. What’s happening is that when ActiveRecord is generates the query for &lt;code class=&quot;highlighter-rouge&quot;&gt;bar.baz&lt;/code&gt;, once again it drives the query off of the &lt;code class=&quot;highlighter-rouge&quot;&gt;bazes&lt;/code&gt; table with poor regard for the &lt;code class=&quot;highlighter-rouge&quot;&gt;bars&lt;/code&gt; table:&lt;/p&gt;
+
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;SELECT&lt;/span&gt;  &lt;span class=&quot;nv&quot;&gt;`bazs`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`bazs`&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;INNER&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;JOIN&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`bars`&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;ON&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`bars`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;`resource_id`&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`bazs`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;`id`&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`bars`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;`deleted`&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`bars`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;`resource_type`&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Baz'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`bazs`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;`id`&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;AND&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;`bars`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;`resource_type`&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Baz'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;LIMIT&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -876,44 +881,43 @@ Our SQL statement is trying to join the &lt;code class=&quot;highlighter-rouge&q
 
 &lt;p&gt;We want a way to add &lt;code class=&quot;highlighter-rouge&quot;&gt;AND `bars`.`id` = 1&lt;/code&gt; to the query. Rails doesn’t currently provide a way to do this while retaining the ability to do the joins: the value &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; here is dependent on the instnace, and joins must construct table-referencing queries without references to instances. I do, but that post is for another time. Until then, there is another way around this, although it’s not the prettiest:&lt;/p&gt;
 
-&lt;p&gt;```ruby bar.rb
-class Bar
-  belongs_to :foo, -&amp;gt; { joins(:bar).where(bars: {resource_type: ‘Foo’}) }, foreign_key: ‘resource_id’
-  belongs_to :baz, -&amp;gt; { joins(:bar).where(bars: {resource_type: ‘Baz’}) }, foreign_&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bar&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;belongs_to&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;bars: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;resource_type: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Foo'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;foreign_key: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'resource_id'&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;belongs_to&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:baz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;where&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;bars: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;resource_type: &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Baz'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;foreign_&lt;/span&gt;
 
-&lt;p&gt;def foo(*args)
-    resource_type == “Foo” ? super : nil
-  end&lt;/p&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;resource_type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Foo&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;nil&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-&lt;p&gt;def baz(*args)
-    resource_type == “Baz” ? super : nil
-  end
-end&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-We simply override the `:foo` and `:baz` methods to immediately return nil if `self` does not have the corerct resource_type. It's worth noting that this use of `super` only works because ActiveRecrd defines assocaition getter and setter methods in the module `Bar::GeneratedAssociationMethods` that gets included into `Bar`, rather than defining the methods on `Bar` itself. Go Rails!
-
-Speaking of setter methods, there's at least one more thing we have to add. It seems that Rails does not use the assocaition scopes on create, so if we use
-
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;baz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;resource_type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Baz&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;nil&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;p&gt;bar.baz = Baz.first
-bar&lt;/p&gt;
-&lt;h1 id=&quot;-bar-id-1-resource_type-foo-resource_id-1-foo_id-nil-deleted-false&quot;&gt;=&amp;gt; #&amp;lt;Bar id: 1, resource_type: “Foo”, resource_id: 1, foo_id: nil, deleted: false&amp;gt;&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-`bar`'s resource_type is still &quot;Foo&quot;! To solve this, we also override the setters, although this is beginning to feel a little hacky:
 
+&lt;p&gt;We simply override the &lt;code class=&quot;highlighter-rouge&quot;&gt;:foo&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;:baz&lt;/code&gt; methods to immediately return nil if &lt;code class=&quot;highlighter-rouge&quot;&gt;self&lt;/code&gt; does not have the corerct resource_type. It’s worth noting that this use of &lt;code class=&quot;highlighter-rouge&quot;&gt;super&lt;/code&gt; only works because ActiveRecrd defines assocaition getter and setter methods in the module &lt;code class=&quot;highlighter-rouge&quot;&gt;Bar::GeneratedAssociationMethods&lt;/code&gt; that gets included into &lt;code class=&quot;highlighter-rouge&quot;&gt;Bar&lt;/code&gt;, rather than defining the methods on &lt;code class=&quot;highlighter-rouge&quot;&gt;Bar&lt;/code&gt; itself. Go Rails!&lt;/p&gt;
 
-```ruby bar.rb
-  def foo=(foo)
-    super
-    self.resource = foo
-  end
+&lt;p&gt;Speaking of setter methods, there’s at least one more thing we have to add. It seems that Rails does not use the assocaition scopes on create, so if we use&lt;/p&gt;
 
-  def bar=(bar)
-    super
-    self.resource = bar
-  end
-end
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bar.baz = Baz.first
+bar
+#  =&amp;gt; #&amp;lt;Bar id: 1, resource_type: &quot;Foo&quot;, resource_id: 1, foo_id: nil, deleted: false&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bar&lt;/code&gt;’s resource_type is still “Foo”! To solve this, we also override the setters in &lt;code class=&quot;highlighter-rouge&quot;&gt;Bar&lt;/code&gt;, although this is beginning to feel a little hacky:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resource&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resource&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bar&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -926,34 +930,34 @@ end
 
 &lt;p&gt;Lastly, there are other methods also defined on assocaitions that we would need to override. Namely, &lt;code class=&quot;highlighter-rouge&quot;&gt;build_foo&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;create_foo&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;create_foo!&lt;/code&gt;. Rails is ponitferous. Let’s ust metaprogramming to make this a little more manageable:&lt;/p&gt;
 
-&lt;p&gt;&lt;a name=&quot;tl-dr-monomorphic&quot;&gt;&lt;/a&gt;
-```ruby bar.rb
-class Bar &amp;lt; ActiveRecord::Base
-  belongs_to :resource, polymorphic: true
-  belongs_to :foo, -&amp;gt;{joins(:bars).where bars: {resource_type: “Foo”}}, foreign_key: :resource_id
-  belongs_to :baz, -&amp;gt;{joins(:bars).where bars: {resource_type: “Baz”}}, foreign_key: :resource_id&lt;/p&gt;
+&lt;p&gt;&lt;a name=&quot;tl-dr-monomorphic&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;belongs_to&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:resource&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;polymorphic: &lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;belongs_to&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:bars&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;bars: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;resource_type: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Foo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}},&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;foreign_key: :resource_id&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;belongs_to&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:baz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:bars&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;bars: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;resource_type: &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Baz&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}},&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;foreign_key: :resource_id&lt;/span&gt;
 
-&lt;p&gt;def foo(*args)
-    resource_type == “Foo” ? super : nil
-  end&lt;/p&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;resource_type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Foo&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;nil&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-&lt;p&gt;def baz(*args)
-    resource_type == “Baz” ? super : nil
-  end&lt;/p&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;baz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;resource_type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Baz&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;nil&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-&lt;p&gt;[:foo, :baz].each do |resource_name|
-    [”#{resource_name}=”, “build_#{resource_name}”, “create_#{resource_name}”, “create_#{resource_name}!”].each do |method|
-      define_method(method) do |resource|
-        typed_resource = super(resource)
-        self.resource = typed_resource
-      end
-    end
-  end&lt;/p&gt;
+  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:baz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resource_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resource_name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;=&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;build_&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resource_name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;create_&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resource_name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;create_&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resource_name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;define_method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;typed_resource&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resource&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resource&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;typed_resource&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-&lt;p&gt;end
-```&lt;/p&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;A little heavy. Not speaking softly anymore. What can I say, Rails is a bear.&lt;/p&gt;</content><author><name></name></author><summary type="html">Join to a a single resource type in a polymorphic assocaition tl; dr</summary></entry><entry><title type="html">duck, duck, goose</title><link href="speaksoftly.io/2016/04/18/duck.html" rel="alternate" type="text/html" title="duck, duck, goose" /><published>2016-04-18T21:55:27-04:00</published><updated>2016-04-18T21:55:27-04:00</updated><id>speaksoftly.io/2016/04/18/duck</id><content type="html" xml:base="speaksoftly.io/2016/04/18/duck.html">&lt;p&gt;Duck typing and I are in a fight.&lt;/p&gt;
+&lt;p&gt;A little heavy. Not speaking softly anymore. What can I say, Rails is a bear.&lt;/p&gt;</content><author><name></name></author><summary type="html">Join to a a single resource type in a polymorphic assocaition tl; dr</summary></entry><entry><title type="html">duck, duck, goose</title><link href="http://localhost:4000/2016/04/18/duck.html" rel="alternate" type="text/html" title="duck, duck, goose" /><published>2016-04-18T21:55:27-04:00</published><updated>2016-04-18T21:55:27-04:00</updated><id>http://localhost:4000/2016/04/18/duck</id><content type="html" xml:base="http://localhost:4000/2016/04/18/duck.html">&lt;p&gt;Duck typing and I are in a fight.&lt;/p&gt;
 
 &lt;p&gt;A lot of rubyists like to extol the virtues of “duck typing”. That is, you determine the type of an object by the methods it responds to. If object.respond_to?(:quack), then it must be a Duck! This is bundled up with weak typing, where variables and method arguments are not required to be a specific type. I love weak typing (in most contexts I code in, anyway). Weak typing and I are not in a fight.&lt;/p&gt;
 
@@ -976,7 +980,7 @@ class Bar &amp;lt; ActiveRecord::Base
 
 &lt;p&gt;You disagree. Really? Do you know all of the classes defined in Rails as well as you know your own code? Can you recite all of the Ruby &lt;code class=&quot;highlighter-rouge&quot;&gt;Enumerable&lt;/code&gt; methods right now?&lt;/p&gt;
 
-&lt;p&gt;Instead, knowledge of your codebase allows you to master what names exist in what namespaces so that you know your constant Beatle refers to a musician and not a bug. This lets you use &lt;code class=&quot;highlighter-rouge&quot;&gt;is_a?&lt;/code&gt; with reckless abandon: you know exactly what classes you’ve included into your app. While other gems are able to overwrite your namespaces, that would be rather rude of them. Not speaking very softly. Defining mew methods in their own classes, however, is not rude. You’re asking for trouble if in order to infer suitability you ask classes, in their own namespaces that you do not control, simply whether or not they have defined a method of an arbitrary name that could mean anything at all. You’re asking an object of an arbitray class that you think might be Array-like &lt;code class=&quot;highlighter-rouge&quot;&gt;responds_to? :push&lt;/code&gt;, and you’re chugging along happily until someone calls your method with a NuclearLaunchButton object. Oops.&lt;/p&gt;</content><author><name></name></author><summary type="html">Duck typing and I are in a fight.</summary></entry><entry><title type="html">offline_lookup</title><link href="speaksoftly.io/2016/04/12/offline-lookup.html" rel="alternate" type="text/html" title="offline_lookup" /><published>2016-04-12T17:36:36-04:00</published><updated>2016-04-12T17:36:36-04:00</updated><id>speaksoftly.io/2016/04/12/offline-lookup</id><content type="html" xml:base="speaksoftly.io/2016/04/12/offline-lookup.html">&lt;h2 id=&quot;add-convenient-syntax-and-reduce-db-fetches-for-small-lookup-tables&quot;&gt;Add convenient syntax and reduce db fetches for small lookup tables&lt;/h2&gt;
+&lt;p&gt;Instead, knowledge of your codebase allows you to master what names exist in what namespaces so that you know your constant Beatle refers to a musician and not a bug. This lets you use &lt;code class=&quot;highlighter-rouge&quot;&gt;is_a?&lt;/code&gt; with reckless abandon: you know exactly what classes you’ve included into your app. While other gems are able to overwrite your namespaces, that would be rather rude of them. Not speaking very softly. Defining mew methods in their own classes, however, is not rude. You’re asking for trouble if in order to infer suitability you ask classes, in their own namespaces that you do not control, simply whether or not they have defined a method of an arbitrary name that could mean anything at all. You’re asking an object of an arbitray class that you think might be Array-like &lt;code class=&quot;highlighter-rouge&quot;&gt;responds_to? :push&lt;/code&gt;, and you’re chugging along happily until someone calls your method with a NuclearLaunchButton object. Oops.&lt;/p&gt;</content><author><name></name></author><summary type="html">Duck typing and I are in a fight.</summary></entry><entry><title type="html">offline_lookup</title><link href="http://localhost:4000/2016/04/12/offline-lookup.html" rel="alternate" type="text/html" title="offline_lookup" /><published>2016-04-12T17:36:36-04:00</published><updated>2016-04-12T17:36:36-04:00</updated><id>http://localhost:4000/2016/04/12/offline-lookup</id><content type="html" xml:base="http://localhost:4000/2016/04/12/offline-lookup.html">&lt;h2 id=&quot;add-convenient-syntax-and-reduce-db-fetches-for-small-lookup-tables&quot;&gt;Add convenient syntax and reduce db fetches for small lookup tables&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;#tl-dr-offline_lookup&quot;&gt;tl; dr&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;A common pattern in many apps is to have a small set of enumerable options in a database table. A good example we have is turnaround_levels, which decsribe various speeds of service customers are pyaing us for. For simplicitly, let’s pretend we have the following values: “Two Hour”, “Same Day”, “Standard”, and “Extended”. A lot of our code was littered with calls such as &lt;code class=&quot;highlighter-rouge&quot;&gt;Foo.where(turnaround_level_id: TurnaroundLevel.find_by(name: &quot;Standard&quot;).id)&lt;/code&gt;. An alternative could have been &lt;code class=&quot;highlighter-rouge&quot;&gt;Foo.joins(:turnaround_level).merge(TurnaroundLevel.where(name: &quot;Standard&quot;))&lt;/code&gt;. All of these are equally ugly to me. Further, this itself littered the logs with these tiny lookups of Turnaround Level, which seems silly since there are, short of large policy changes, pretty static.&lt;/p&gt;
@@ -994,61 +998,61 @@ class Bar &amp;lt; ActiveRecord::Base
 
 &lt;p&gt;This gem was motivated by creating methods such as &lt;code class=&quot;highlighter-rouge&quot;&gt;:two_hour_id&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;:standard_id&lt;/code&gt;. I assumed the key field of interest was called “id”, but imediately saw the need to customize the name of the lookup column. In this case, it was “name”. So the stripped down, basic, original implemnetation looked like this:&lt;/p&gt;
 
-&lt;p&gt;```ruby offline_id_lookup.rb
-module OfflineIDLookup
-  extend ActiveSupport::Concern&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;OfflineIDLookup&lt;/span&gt;
+  &lt;span class=&quot;kp&quot;&gt;extend&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ActiveSupport&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Concern&lt;/span&gt;
 
-&lt;p&gt;module ClassMethods&lt;/p&gt;
+  &lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;ClassMethods&lt;/span&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def use_offline_id_lookup(field = :name)
-  lookup_values = {}
-  self.find_each{|row| lookup_values[row.id] = row[field]}
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;use_offline_id_lookup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;field&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;lookup_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;find_each&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;row&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lookup_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;row&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;row&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;field&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]}&lt;/span&gt;
 
-  self.singleton_class.instance_eval do
-    lookup_values.each do |id, name|
-      define_method &quot;#{name}_id&quot;.methodize do
-        id
-      end
-    end
-  end
-end
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;singleton_class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;instance_eval&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;lookup_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;define_method&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;_id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;methodize&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+            &lt;span class=&quot;nb&quot;&gt;id&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;no&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;class_eval&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;OfflineIDLookup&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;end
-end&lt;/p&gt;
+&lt;p&gt;When a model calls &lt;code class=&quot;highlighter-rouge&quot;&gt;use_offline_id_lookup&lt;/code&gt;, it defines class methods &lt;code class=&quot;highlighter-rouge&quot;&gt;#{name}_id&lt;/code&gt;, for each methodized &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; in the table. This assumes name uniqueness off the bat, which may not be correct. And of course, if the table its operating on is large, it’s a pretty bad idea; not just because you’re polluting your model with tons of new methods, but because all those values that logically live inside the db are being kept in memory now. But for a table with a handlful of rows, it’s perfect.&lt;/p&gt;
 
-&lt;p&gt;ActiveRecord::Base.class_eval { include OfflineIDLookup }&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-When a model calls `use_offline_id_lookup`, it defines class methods `#{name}_id`, for each methodized `name` in the table. This assumes name uniqueness off the bat, which may not be correct. And of course, if the table its operating on is large, it's a pretty bad idea; not just because you're polluting your model with tons of new methods, but because all those values that logically live inside the db are being kept in memory now. But for a table with a handlful of rows, it's perfect.
+&lt;p&gt;There were a number of modifications I wanted to make. I quickly learned that whlie &lt;code class=&quot;highlighter-rouge&quot;&gt;TurnaroundLevel.two_hour_id&lt;/code&gt; was what I wanted most of the time, there were times when I has “Two Hour” as a string. So I created two new methods:&lt;/p&gt;
 
-There were a number of modifications I wanted to make. I quickly learned that whlie `TurnaroundLevel.two_hour_id` was what I wanted most of the time, there were times when I has &quot;Two Hour&quot; as a string. So I created two new methods:
+&lt;p&gt;&lt;a name=&quot;arg_methods&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&amp;lt;a name=&quot;arg_methods&quot;&amp;gt;&amp;lt;/a&amp;gt;
-
-```ruby arg_methods
-        define_method &quot;#{field}_for_id&quot; do |id|
+&lt;p&gt;```ruby arg_methods
+        define_method “#{field}_for_id” do |id|
           lookup_values[id]
-        end
+        end&lt;/p&gt;
 
-        define_method &quot;id_for_#{field}&quot; do |name|
-          lookup_values.keys.find{|id| lookup_values[id].methodize == name.to_s.methodize}
-        end
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    define_method &quot;id_for_#{field}&quot; do |name|
+      lookup_values.keys.find{|id| lookup_values[id].methodize == name.to_s.methodize}
+    end ```
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;TurnaroudnLevel.id_for_name(tuurnaround)&lt;/code&gt; is not hugely more convenient or readable than &lt;code class=&quot;highlighter-rouge&quot;&gt;TurnaroundLevel.find_by(name: turnaround).try(:id)&lt;/code&gt;, but I still deemed the benefit worth the extra namespace pollution. We already had the lookup data in memory anyway. This became even more true when I moved away from defining these methods in a closure (i.e. a block where I’m referring to variables defined outside the block) because I remain unsure of the overhead of keeping track of large arrays of data define outside a closure. I felt it cleaner and more object=oriented to use a class attribute to store the lookup values on the class itself. So now the root module looks as follows. You’ll notice I also started customizing the key field and adding some keyword arg options to the call to what is not simply called &lt;code class=&quot;highlighter-rouge&quot;&gt;use_offline_lookup&lt;/code&gt;:&lt;/p&gt;
 
-&lt;p&gt;```ruby offline_lookup.rb
-module OfflineLookup
-  module ActiveRecord
-    def use_offline_lookup(field = :name, key: :id, lookup_methods: true)
-      class_attribute :offline_lookup_values, :offline_lookup_options
-      self.offline_lookup_options = {field: field.to_s, key: key.to_s, lookup_methods: lookup_methods}.freeze
-      self.offline_lookup_values = self.all.pluck(key, field).to_h.freeze&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;OfflineLookup&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;ActiveRecord&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;use_offline_lookup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;field&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;key: :id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;lookup_methods: &lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;class_attribute&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:offline_lookup_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:offline_lookup_options&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;offline_lookup_options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;field: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;field&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;key: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;lookup_methods: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lookup_methods&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;freeze&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;offline_lookup_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;pluck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;field&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;freeze&lt;/span&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  include OfflineLookup::Base
-end   end end ```
+      &lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;OfflineLookup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -1073,31 +1077,31 @@ end   end end ```
 
 &lt;p&gt;&lt;a name=&quot;tl-dr-offline_lookup&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;The full gem is available at [https://github.com/ozydingo/offline_lookup]&lt;/p&gt;</content><author><name></name></author><summary type="html">Add convenient syntax and reduce db fetches for small lookup tables tl; dr</summary></entry><entry><title type="html">left_join</title><link href="speaksoftly.io/2016/04/09/left-join.html" rel="alternate" type="text/html" title="left_join" /><published>2016-04-09T16:58:25-04:00</published><updated>2016-04-09T16:58:25-04:00</updated><id>speaksoftly.io/2016/04/09/left-join</id><content type="html" xml:base="speaksoftly.io/2016/04/09/left-join.html">&lt;h2 id=&quot;add-a-simple-left_join-method-to-activerecord&quot;&gt;Add a simple left_join method to ActiveRecord&lt;/h2&gt;
+&lt;p&gt;The full gem is available at [https://github.com/ozydingo/offline_lookup]&lt;/p&gt;</content><author><name></name></author><summary type="html">Add convenient syntax and reduce db fetches for small lookup tables tl; dr</summary></entry><entry><title type="html">left_join</title><link href="http://localhost:4000/2016/04/09/left-join.html" rel="alternate" type="text/html" title="left_join" /><published>2016-04-09T16:58:25-04:00</published><updated>2016-04-09T16:58:25-04:00</updated><id>http://localhost:4000/2016/04/09/left-join</id><content type="html" xml:base="http://localhost:4000/2016/04/09/left-join.html">&lt;h2 id=&quot;add-a-simple-left_join-method-to-activerecord&quot;&gt;Add a simple left_join method to ActiveRecord&lt;/h2&gt;
 
 &lt;p&gt;For some reason, an easy way to do a &lt;code class=&quot;highlighter-rouge&quot;&gt;LEFT JOIN&lt;/code&gt; has yet to make into ActiveRecord’s lore. There are a lot of ways to build one from scratch. I’ve decided to let existing ActiveRecord methods do the heavy lifting (so we get handling of nested associations and various association types for free) by doing a regular &lt;code class=&quot;highlighter-rouge&quot;&gt;joins&lt;/code&gt;. This of course performs an INNER JOIN by default, but with a little understanding of the underlying Arel structure that ActiveRecord uses to represent queries, we can gently pull apart this final result into the its Arel nodes that we can put back together into a left join.&lt;/p&gt;
 
-&lt;p&gt;```ruby active_record_extension.rb
-module ActiveRecordExtension
-  extend ActiveSupport::Concern&lt;/p&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;ActiveRecordExtension&lt;/span&gt;
+  &lt;span class=&quot;kp&quot;&gt;extend&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ActiveSupport&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Concern&lt;/span&gt;
 
-&lt;p&gt;module ClassMethods
-    def left_joins(&lt;em&gt;args)
-      inner_joins = self.joins(&lt;/em&gt;args).arel.join_sources
-      left_joins = inner_joins.map do |join|
-        Arel::Nodes::OuterJoin.new(join.left, join.right)
-      end
-      self.joins(left_joins)
-    end
-  end
-end&lt;/p&gt;
+  &lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;ClassMethods&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;left_joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;inner_joins&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;arel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join_sources&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;left_joins&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inner_joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+        &lt;span class=&quot;no&quot;&gt;Arel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Nodes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;OuterJoin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;left_joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 
-&lt;p&gt;ActiveRecord::Base.send(:include, ActiveRecordExtension)&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-Once this file is `require`d, we can simply use
+&lt;span class=&quot;no&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ActiveRecordExtension&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-```ruby
-Foo.left_joins(:bar)
+&lt;p&gt;Once this file is &lt;code class=&quot;highlighter-rouge&quot;&gt;require&lt;/code&gt;d, we can simply use&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;no&quot;&gt;Foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;left_joins&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 

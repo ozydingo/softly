@@ -10,7 +10,7 @@
   <meta name="description" content="Object Over-Orientation">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="speaksoftly.io/2016/07/28/objectification.html">
+  <link rel="canonical" href="http://localhost:4000/2016/07/28/objectification.html">
   <link rel="alternate" type="application/rss+xml" title="Speak Softly" href="/feed.xml">
   
   
@@ -66,51 +66,51 @@
   <div class="post-content" itemprop="articleBody">
     <h2 id="object-over-orientation">Object Over-Orientation</h2>
 
-<p>```ruby hash.rb
-class Hash
-  def transcript_sort
-    self.sort { |a,b| a.first.to_i &lt;=&gt; b.first.to_i }
-  end
-end</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>
-What is this method doing? As its name correctly implies, its intended usage was to sort a transcript: specifically, a timed text transcript represented as a Hash with timestamps in the keys and words in the values.
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Hash</span>
+  <span class="k">def</span> <span class="nf">transcript_sort</span>
+    <span class="nb">self</span><span class="p">.</span><span class="nf">sort</span> <span class="p">{</span> <span class="o">|</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">|</span> <span class="n">a</span><span class="p">.</span><span class="nf">first</span><span class="p">.</span><span class="nf">to_i</span> <span class="o">&lt;=&gt;</span> <span class="n">b</span><span class="p">.</span><span class="nf">first</span><span class="p">.</span><span class="nf">to_i</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+</div>
 
-So what's it doing on `Hash`?
+<p>What is this method doing? As its name correctly implies, its intended usage was to sort a transcript: specifically, a timed text transcript represented as a Hash with timestamps in the keys and words in the values.</p>
 
-Ignoring that it effectively does the same thing as the built-in Ruby [`Hash#sort`](http://ruby-doc.org/core-1.8.7/Hash.html#method-i-sort) (&lt;2.0) or the equivalent method from [`Enumerable`](http://ruby-doc.org/core-2.2.2/Enumerable.html#method-i-sort) call edon `Hash` objects (&gt;=2.0), this method shouldn't be here. This code forces every single instnace of `Hash` to be aware of this method called `trancsript_sort`, even if it hasn't two ducks about this "transcript" object.
+<p>So what’s it doing on <code class="highlighter-rouge">Hash</code>?</p>
 
-`{x: 0, y: 1}.transcript_sort`. Sure.
+<p>Ignoring that it effectively does the same thing as the built-in Ruby <a href="http://ruby-doc.org/core-1.8.7/Hash.html#method-i-sort"><code class="highlighter-rouge">Hash#sort</code></a> (&lt;2.0) or the equivalent method from <a href="http://ruby-doc.org/core-2.2.2/Enumerable.html#method-i-sort"><code class="highlighter-rouge">Enumerable</code></a> call edon <code class="highlighter-rouge">Hash</code> objects (&gt;=2.0), this method shouldn’t be here. This code forces every single instnace of <code class="highlighter-rouge">Hash</code> to be aware of this method called <code class="highlighter-rouge">trancsript_sort</code>, even if it hasn’t two ducks about this “transcript” object.</p>
 
-Oh, but it's just one little simple method, what's the harm?
+<p><code class="highlighter-rouge"><span class="p">{</span><span class="err">x:</span><span class="w"> </span><span class="err">0,</span><span class="w"> </span><span class="err">y:</span><span class="w"> </span><span class="err">1</span><span class="p">}</span><span class="err">.transcript_sort</span></code>. Sure.</p>
 
-The following is a real-world example from the same code base. No need to parse the method too closely, but you do get bonus points for appreciating how `prepare_interpolation` and `finalize_interpolation` are methods that were inserted into `String` for similarly specific purposes.
+<p>Oh, but it’s just one little simple method, what’s the harm?</p>
 
-```ruby hash.rb
-class Hash
-  def split_words(paragraph_starts = [], no_break_up=false, max_word_length=32)
-    new_words = {}
-    sorted_words = self.transcript_sort
-    add_blank = false
-    sorted_words.each_with_index do |word, i|
-      current_stamp = word.first.to_i
-      parts = word.second.prepare_interpolation(no_break_up,max_word_length).split(' ')
-      parts &lt;&lt; "" if parts.empty?
-      next_stamp = (sorted_words[i+1].try(:first) || (current_stamp + parts.length * 300)).to_i
-      if parts.length == 1 &amp;&amp; parts.first.blank?
-        new_words[current_stamp] = '' if !!(add_blank || paragraph_starts.include?(current_stamp))
-        add_blank = false
-      else
-        increment = ((next_stamp - current_stamp) / parts.length).floor
-        for part in parts
-          new_words[current_stamp] = part.finalize_interpolation
-          current_stamp = current_stamp + increment
-        end
-        add_blank = !!(parts.last.editorial_note? or parts.last.end_of_sentence?(sorted_words[i+1].try(:second)))
-      end
-    end
-    new_words
-  end
-end
+<p>The following is a real-world example from the same code base. No need to parse the method too closely, but you do get bonus points for appreciating how <code class="highlighter-rouge">prepare_interpolation</code> and <code class="highlighter-rouge">finalize_interpolation</code> are methods that were inserted into <code class="highlighter-rouge">String</code> for similarly specific purposes.</p>
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Hash</span>
+  <span class="k">def</span> <span class="nf">split_words</span><span class="p">(</span><span class="n">paragraph_starts</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">no_break_up</span><span class="o">=</span><span class="kp">false</span><span class="p">,</span> <span class="n">max_word_length</span><span class="o">=</span><span class="mi">32</span><span class="p">)</span>
+    <span class="n">new_words</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">sorted_words</span> <span class="o">=</span> <span class="nb">self</span><span class="p">.</span><span class="nf">transcript_sort</span>
+    <span class="n">add_blank</span> <span class="o">=</span> <span class="kp">false</span>
+    <span class="n">sorted_words</span><span class="p">.</span><span class="nf">each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">word</span><span class="p">,</span> <span class="n">i</span><span class="o">|</span>
+      <span class="n">current_stamp</span> <span class="o">=</span> <span class="n">word</span><span class="p">.</span><span class="nf">first</span><span class="p">.</span><span class="nf">to_i</span>
+      <span class="n">parts</span> <span class="o">=</span> <span class="n">word</span><span class="p">.</span><span class="nf">second</span><span class="p">.</span><span class="nf">prepare_interpolation</span><span class="p">(</span><span class="n">no_break_up</span><span class="p">,</span><span class="n">max_word_length</span><span class="p">).</span><span class="nf">split</span><span class="p">(</span><span class="s1">' '</span><span class="p">)</span>
+      <span class="n">parts</span> <span class="o">&lt;&lt;</span> <span class="s2">""</span> <span class="k">if</span> <span class="n">parts</span><span class="p">.</span><span class="nf">empty?</span>
+      <span class="n">next_stamp</span> <span class="o">=</span> <span class="p">(</span><span class="n">sorted_words</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="nf">try</span><span class="p">(</span><span class="ss">:first</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="n">current_stamp</span> <span class="o">+</span> <span class="n">parts</span><span class="p">.</span><span class="nf">length</span> <span class="o">*</span> <span class="mi">300</span><span class="p">)).</span><span class="nf">to_i</span>
+      <span class="k">if</span> <span class="n">parts</span><span class="p">.</span><span class="nf">length</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">parts</span><span class="p">.</span><span class="nf">first</span><span class="p">.</span><span class="nf">blank?</span>
+        <span class="n">new_words</span><span class="p">[</span><span class="n">current_stamp</span><span class="p">]</span> <span class="o">=</span> <span class="s1">''</span> <span class="k">if</span> <span class="o">!!</span><span class="p">(</span><span class="n">add_blank</span> <span class="o">||</span> <span class="n">paragraph_starts</span><span class="p">.</span><span class="nf">include?</span><span class="p">(</span><span class="n">current_stamp</span><span class="p">))</span>
+        <span class="n">add_blank</span> <span class="o">=</span> <span class="kp">false</span>
+      <span class="k">else</span>
+        <span class="n">increment</span> <span class="o">=</span> <span class="p">((</span><span class="n">next_stamp</span> <span class="o">-</span> <span class="n">current_stamp</span><span class="p">)</span> <span class="o">/</span> <span class="n">parts</span><span class="p">.</span><span class="nf">length</span><span class="p">).</span><span class="nf">floor</span>
+        <span class="k">for</span> <span class="n">part</span> <span class="k">in</span> <span class="n">parts</span>
+          <span class="n">new_words</span><span class="p">[</span><span class="n">current_stamp</span><span class="p">]</span> <span class="o">=</span> <span class="n">part</span><span class="p">.</span><span class="nf">finalize_interpolation</span>
+          <span class="n">current_stamp</span> <span class="o">=</span> <span class="n">current_stamp</span> <span class="o">+</span> <span class="n">increment</span>
+        <span class="k">end</span>
+        <span class="n">add_blank</span> <span class="o">=</span> <span class="o">!!</span><span class="p">(</span><span class="n">parts</span><span class="p">.</span><span class="nf">last</span><span class="p">.</span><span class="nf">editorial_note?</span> <span class="n">or</span> <span class="n">parts</span><span class="p">.</span><span class="nf">last</span><span class="p">.</span><span class="nf">end_of_sentence?</span><span class="p">(</span><span class="n">sorted_words</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="nf">try</span><span class="p">(</span><span class="ss">:second</span><span class="p">)))</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+    <span class="n">new_words</span>
+  <span class="k">end</span>
+<span class="k">end</span>
 </code></pre>
 </div>
 
@@ -120,23 +120,24 @@ end
 
 <p>The first thing I did to this code when I had a chance was to create a <code class="highlighter-rouge">Transcript</code> class that contained all the logic related to this transcript object. This class still stores the same data as the <code class="highlighter-rouge">Hash</code> version, but rather than assimilating <code class="highlighter-rouge">Hash</code>, it simply uses one as a data member. Ideally, we could have a <code class="highlighter-rouge">sort_words</code> method here that returned another <code class="highlighter-rouge">Transcript</code> object with the words sorted (or <code class="highlighter-rouge">sort_words!</code> for in-place). However, for compatiblilty with more code than I could change in one sitting, I created a <code class="highlighter-rouge">Transcript#sorted_words</code> method that returned the same array of [timestamp, words], sorted by timestamp.</p>
 
-<p>```ruby transcript.rb
-class Transcript
-  def sorted_words
-    @words.sort_by{|time, word| time.to_i}
-  end</p>
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Transcript</span>
+  <span class="k">def</span> <span class="nf">sorted_words</span>
+    <span class="vi">@words</span><span class="p">.</span><span class="nf">sort_by</span><span class="p">{</span><span class="o">|</span><span class="n">time</span><span class="p">,</span> <span class="n">word</span><span class="o">|</span> <span class="n">time</span><span class="p">.</span><span class="nf">to_i</span><span class="p">}</span>
+  <span class="k">end</span>
 
-<p># NIY in real life, but more ideal:
-  def sort_words
-    self.deep_dup.sort_words!
-  end</p>
 
-<p>def sort_words!
-    @words.sort_by!{|time, word| time.to_i}
-    return self
-  end
-end
-```</p>
+  <span class="c1"># NIY in real life, but more ideal:</span>
+  <span class="k">def</span> <span class="nf">sort_words</span>
+    <span class="nb">self</span><span class="p">.</span><span class="nf">deep_dup</span><span class="p">.</span><span class="nf">sort_words!</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">sort_words!</span>
+    <span class="vi">@words</span><span class="p">.</span><span class="nf">sort_by!</span><span class="p">{</span><span class="o">|</span><span class="n">time</span><span class="p">,</span> <span class="n">word</span><span class="o">|</span> <span class="n">time</span><span class="p">.</span><span class="nf">to_i</span><span class="p">}</span>
+    <span class="k">return</span> <span class="nb">self</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+</div>
 
 <p>###Over-objectification</p>
 

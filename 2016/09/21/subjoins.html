@@ -10,7 +10,7 @@
   <meta name="description" content="Join from a parent class to associations defined in subclasses.">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="speaksoftly.io/2016/09/21/subjoins.html">
+  <link rel="canonical" href="http://localhost:4000/2016/09/21/subjoins.html">
   <link rel="alternate" type="application/rss+xml" title="Speak Softly" href="/feed.xml">
   
   
@@ -74,29 +74,29 @@
 
 <p>Well for this basic case, that’s really quite easy: <code class="highlighter-rouge">Contractor.all.merge(project.users).joins(:profile)</code></p>
 
-<p>In fact, we can easily make this another <a href="blog/2016/06/03/secret/">secret extension</a>:</p>
+<p>In fact, we can easily make this another <a href="blog/2016/06/03/secret/">secret extension</a> in our file <code class="highlighter-rouge">active_record_extension.rb</code>:</p>
 
-<p>```ruby active_record_extension.rb
-    def as_subclass(subclass)
-      subclass.all.merge(self.all)
-    end</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>
-Great! We're done here.
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code>    <span class="k">def</span> <span class="nf">as_subclass</span><span class="p">(</span><span class="n">subclass</span><span class="p">)</span>
+      <span class="n">subclass</span><span class="p">.</span><span class="nf">all</span><span class="p">.</span><span class="nf">merge</span><span class="p">(</span><span class="nb">self</span><span class="p">.</span><span class="nf">all</span><span class="p">)</span>
+    <span class="k">end</span>
+</code></pre>
+</div>
 
-Or are we?
+<p>Great! We’re done here.</p>
 
-So you might have noticed that this method will in fact force the `type == 'Contractor'` requirement on your query even if you didn't do so youself. Well now that gets me thinking. Can we `LEFT JOIN` to profile on a collection of `User`s that aren't all `Contractor`s? That is, `User`s that happen to be `Contractor`s (and have a profile, which is all of them) will get joins to a `:profile` record, while others will have `NULL` for those joined columns.
+<p>Or are we?</p>
 
-Why, yes. Yes we can. Once again we will make heavy use of [arel](http://jpospisil.com/2014/06/16/the-definitive-guide-to-arel-the-sql-manager-for-ruby.html), to the point that even this link doesn't cover all of what we need to know. To the point that I'm still not quite sure what to do about through associations, but maybe I'll come back another time to update this post when I figure that out.
+<p>So you might have noticed that this method will in fact force the <code class="highlighter-rouge">type == 'Contractor'</code> requirement on your query even if you didn’t do so youself. Well now that gets me thinking. Can we <code class="highlighter-rouge">LEFT JOIN</code> to profile on a collection of <code class="highlighter-rouge">User</code>s that aren’t all <code class="highlighter-rouge">Contractor</code>s? That is, <code class="highlighter-rouge">User</code>s that happen to be <code class="highlighter-rouge">Contractor</code>s (and have a profile, which is all of them) will get joins to a <code class="highlighter-rouge">:profile</code> record, while others will have <code class="highlighter-rouge">NULL</code> for those joined columns.</p>
 
-&lt;a name="tl-dr-subjoins"&gt;&lt;/a&gt;
+<p>Why, yes. Yes we can. Once again we will make heavy use of <a href="http://jpospisil.com/2014/06/16/the-definitive-guide-to-arel-the-sql-manager-for-ruby.html">arel</a>, to the point that even this link doesn’t cover all of what we need to know. To the point that I’m still not quite sure what to do about through associations, but maybe I’ll come back another time to update this post when I figure that out.</p>
 
-```ruby
-User.activate_secret_extensions.subjoins(:profile).to_sql
-# =&gt; "SELECT `users`.* FROM `users` 
-#     LEFT OUTER JOIN `admin_profiles` ON `users`.`type` IN ('Admin') AND `admin_profiles`.`user_id` = `users`.`id` 
-#     LEFT OUTER JOIN `contractor_profiles` ON `users`.`type` IN ('Contractor') AND `contractor_profiles`.`user_id` = `users`.`id`
-#     WHERE (users.deleted = false)"
+<p><a name="tl-dr-subjoins"></a></p>
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="no">User</span><span class="p">.</span><span class="nf">activate_secret_extensions</span><span class="p">.</span><span class="nf">subjoins</span><span class="p">(</span><span class="ss">:profile</span><span class="p">).</span><span class="nf">to_sql</span>
+<span class="c1"># =&gt; "SELECT `users`.* FROM `users` </span>
+<span class="c1">#     LEFT OUTER JOIN `admin_profiles` ON `users`.`type` IN ('Admin') AND `admin_profiles`.`user_id` = `users`.`id` </span>
+<span class="c1">#     LEFT OUTER JOIN `contractor_profiles` ON `users`.`type` IN ('Contractor') AND `contractor_profiles`.`user_id` = `users`.`id`</span>
+<span class="c1">#     WHERE (users.deleted = false)"</span>
 </code></pre>
 </div>
 
@@ -104,29 +104,29 @@ User.activate_secret_extensions.subjoins(:profile).to_sql
 
 <p>Here’s how we accomplish this:</p>
 
-<p>```ruby active_record_extension.rb
-    # currently does not work with :through associations
-    def subjoins(association)
-      associations = descendants.map{|klass| [klass, klass.reflect_on_association(association)]}.to_h.select{|klass, assoc| assoc.present?}
-      associations.keys.none?{|assoc| assoc.is_a?(ActiveRecord::Reflection::ThroughReflection)} or raise NotImplementedError, “NIY for through associations”</p>
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code>    <span class="c1"># currently does not work with :through associations</span>
+    <span class="k">def</span> <span class="nf">subjoins</span><span class="p">(</span><span class="n">association</span><span class="p">)</span>
+      <span class="n">associations</span> <span class="o">=</span> <span class="n">descendants</span><span class="p">.</span><span class="nf">map</span><span class="p">{</span><span class="o">|</span><span class="n">klass</span><span class="o">|</span> <span class="p">[</span><span class="n">klass</span><span class="p">,</span> <span class="n">klass</span><span class="p">.</span><span class="nf">reflect_on_association</span><span class="p">(</span><span class="n">association</span><span class="p">)]}.</span><span class="nf">to_h</span><span class="p">.</span><span class="nf">select</span><span class="p">{</span><span class="o">|</span><span class="n">klass</span><span class="p">,</span> <span class="n">assoc</span><span class="o">|</span> <span class="n">assoc</span><span class="p">.</span><span class="nf">present?</span><span class="p">}</span>
+      <span class="n">associations</span><span class="p">.</span><span class="nf">keys</span><span class="p">.</span><span class="nf">none?</span><span class="p">{</span><span class="o">|</span><span class="n">assoc</span><span class="o">|</span> <span class="n">assoc</span><span class="p">.</span><span class="nf">is_a?</span><span class="p">(</span><span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Reflection</span><span class="o">::</span><span class="no">ThroughReflection</span><span class="p">)}</span> <span class="n">or</span> <span class="k">raise</span> <span class="no">NotImplementedError</span><span class="p">,</span> <span class="s2">"NIY for through associations"</span>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>  bind_values = []
-  arel = self.all.arel
-  associations.group_by{|klass, assoc| assoc.klass.base_class}.each do |foreign_klass, assocs|
-    conditions = assocs.map do |klass, assoc|
-      join_arel = klass.joins(assoc.name).arel
-      join_condition = join_arel.join_sources.last.right.expr
-      bind_values += join_arel.bind_values
-      self.arel_table[self.inheritance_column].in([klass.name, *klass.subclasses.map(&amp;:name)]).and(join_condition)
-    end.reduce(&amp;:or)
+      <span class="n">bind_values</span> <span class="o">=</span> <span class="p">[]</span>
+      <span class="n">arel</span> <span class="o">=</span> <span class="nb">self</span><span class="p">.</span><span class="nf">all</span><span class="p">.</span><span class="nf">arel</span>
+      <span class="n">associations</span><span class="p">.</span><span class="nf">group_by</span><span class="p">{</span><span class="o">|</span><span class="n">klass</span><span class="p">,</span> <span class="n">assoc</span><span class="o">|</span> <span class="n">assoc</span><span class="p">.</span><span class="nf">klass</span><span class="p">.</span><span class="nf">base_class</span><span class="p">}.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">foreign_klass</span><span class="p">,</span> <span class="n">assocs</span><span class="o">|</span>
+        <span class="n">conditions</span> <span class="o">=</span> <span class="n">assocs</span><span class="p">.</span><span class="nf">map</span> <span class="k">do</span> <span class="o">|</span><span class="n">klass</span><span class="p">,</span> <span class="n">assoc</span><span class="o">|</span>
+          <span class="n">join_arel</span> <span class="o">=</span> <span class="n">klass</span><span class="p">.</span><span class="nf">joins</span><span class="p">(</span><span class="n">assoc</span><span class="p">.</span><span class="nf">name</span><span class="p">).</span><span class="nf">arel</span>
+          <span class="n">join_condition</span> <span class="o">=</span> <span class="n">join_arel</span><span class="p">.</span><span class="nf">join_sources</span><span class="p">.</span><span class="nf">last</span><span class="p">.</span><span class="nf">right</span><span class="p">.</span><span class="nf">expr</span>
+          <span class="n">bind_values</span> <span class="o">+=</span> <span class="n">join_arel</span><span class="p">.</span><span class="nf">bind_values</span>
+          <span class="nb">self</span><span class="p">.</span><span class="nf">arel_table</span><span class="p">[</span><span class="nb">self</span><span class="p">.</span><span class="nf">inheritance_column</span><span class="p">].</span><span class="nf">in</span><span class="p">([</span><span class="n">klass</span><span class="p">.</span><span class="nf">name</span><span class="p">,</span> <span class="o">*</span><span class="n">klass</span><span class="p">.</span><span class="nf">subclasses</span><span class="p">.</span><span class="nf">map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:name</span><span class="p">)]).</span><span class="nf">and</span><span class="p">(</span><span class="n">join_condition</span><span class="p">)</span>
+        <span class="k">end</span><span class="p">.</span><span class="nf">reduce</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:or</span><span class="p">)</span>
 
-    arel = arel.join(foreign_klass.arel_table, Arel::Nodes::OuterJoin).on(conditions)
-  end
-  result = self.all
-  result = result.joins(*arel.join_sources) if arel.join_sources.present?
-  bind_values.each{|val| result = result.bind(val)}
-  return result
-end   end ```
+        <span class="n">arel</span> <span class="o">=</span> <span class="n">arel</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="n">foreign_klass</span><span class="p">.</span><span class="nf">arel_table</span><span class="p">,</span> <span class="no">Arel</span><span class="o">::</span><span class="no">Nodes</span><span class="o">::</span><span class="no">OuterJoin</span><span class="p">).</span><span class="nf">on</span><span class="p">(</span><span class="n">conditions</span><span class="p">)</span>
+      <span class="k">end</span>
+      <span class="n">result</span> <span class="o">=</span> <span class="nb">self</span><span class="p">.</span><span class="nf">all</span>
+      <span class="n">result</span> <span class="o">=</span> <span class="n">result</span><span class="p">.</span><span class="nf">joins</span><span class="p">(</span><span class="o">*</span><span class="n">arel</span><span class="p">.</span><span class="nf">join_sources</span><span class="p">)</span> <span class="k">if</span> <span class="n">arel</span><span class="p">.</span><span class="nf">join_sources</span><span class="p">.</span><span class="nf">present?</span>
+      <span class="n">bind_values</span><span class="p">.</span><span class="nf">each</span><span class="p">{</span><span class="o">|</span><span class="n">val</span><span class="o">|</span> <span class="n">result</span> <span class="o">=</span> <span class="n">result</span><span class="p">.</span><span class="nf">bind</span><span class="p">(</span><span class="n">val</span><span class="p">)}</span>
+      <span class="k">return</span> <span class="n">result</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
 </code></pre>
 </div>
 

@@ -10,7 +10,7 @@
   <meta name="description" content="Add a simple left_join method to ActiveRecord">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="speaksoftly.io/2016/04/09/left-join.html">
+  <link rel="canonical" href="http://localhost:4000/2016/04/09/left-join.html">
   <link rel="alternate" type="application/rss+xml" title="Speak Softly" href="/feed.xml">
   
   
@@ -68,27 +68,27 @@
 
 <p>For some reason, an easy way to do a <code class="highlighter-rouge">LEFT JOIN</code> has yet to make into ActiveRecord’s lore. There are a lot of ways to build one from scratch. I’ve decided to let existing ActiveRecord methods do the heavy lifting (so we get handling of nested associations and various association types for free) by doing a regular <code class="highlighter-rouge">joins</code>. This of course performs an INNER JOIN by default, but with a little understanding of the underlying Arel structure that ActiveRecord uses to represent queries, we can gently pull apart this final result into the its Arel nodes that we can put back together into a left join.</p>
 
-<p>```ruby active_record_extension.rb
-module ActiveRecordExtension
-  extend ActiveSupport::Concern</p>
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">module</span> <span class="nn">ActiveRecordExtension</span>
+  <span class="kp">extend</span> <span class="no">ActiveSupport</span><span class="o">::</span><span class="no">Concern</span>
 
-<p>module ClassMethods
-    def left_joins(<em>args)
-      inner_joins = self.joins(</em>args).arel.join_sources
-      left_joins = inner_joins.map do |join|
-        Arel::Nodes::OuterJoin.new(join.left, join.right)
-      end
-      self.joins(left_joins)
-    end
-  end
-end</p>
+  <span class="k">module</span> <span class="nn">ClassMethods</span>
+    <span class="k">def</span> <span class="nf">left_joins</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
+      <span class="n">inner_joins</span> <span class="o">=</span> <span class="nb">self</span><span class="p">.</span><span class="nf">joins</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">).</span><span class="nf">arel</span><span class="p">.</span><span class="nf">join_sources</span>
+      <span class="n">left_joins</span> <span class="o">=</span> <span class="n">inner_joins</span><span class="p">.</span><span class="nf">map</span> <span class="k">do</span> <span class="o">|</span><span class="n">join</span><span class="o">|</span>
+        <span class="no">Arel</span><span class="o">::</span><span class="no">Nodes</span><span class="o">::</span><span class="no">OuterJoin</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">join</span><span class="p">.</span><span class="nf">left</span><span class="p">,</span> <span class="n">join</span><span class="p">.</span><span class="nf">right</span><span class="p">)</span>
+      <span class="k">end</span>
+      <span class="nb">self</span><span class="p">.</span><span class="nf">joins</span><span class="p">(</span><span class="n">left_joins</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
 
-<p>ActiveRecord::Base.send(:include, ActiveRecordExtension)</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>
-Once this file is `require`d, we can simply use
+<span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span><span class="p">.</span><span class="nf">send</span><span class="p">(</span><span class="ss">:include</span><span class="p">,</span> <span class="no">ActiveRecordExtension</span><span class="p">)</span>
+</code></pre>
+</div>
 
-```ruby
-Foo.left_joins(:bar)
+<p>Once this file is <code class="highlighter-rouge">require</code>d, we can simply use</p>
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="no">Foo</span><span class="p">.</span><span class="nf">left_joins</span><span class="p">(</span><span class="ss">:bar</span><span class="p">)</span>
 </code></pre>
 </div>
 

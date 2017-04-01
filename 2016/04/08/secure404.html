@@ -10,7 +10,7 @@
   <meta name="description" content="Intercept the application error debug page under specified conditions tl; dr">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="speaksoftly.io/2016/04/08/secure404.html">
+  <link rel="canonical" href="http://localhost:4000/2016/04/08/secure404.html">
   <link rel="alternate" type="application/rss+xml" title="Speak Softly" href="/feed.xml">
   
   
@@ -77,17 +77,19 @@
 
 <p>Cool, I fire up my editor and try this in <code class="highlighter-rouge">application_controller.rb</code> to simply redirect non-logged in users when they hit this error:</p>
 
-<p>```ruby application_controller.rb
-  if Rails.env == “staging”
-    rescue_from ActionDispatch:RoutingError, :handle_routing_error</p>
+<p>In <code class="highlighter-rouge">application_controller.rb</code>:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>def handle_routing_error
-  if current_user.nil?
-    redirect_to new_user_sessions_url
-  else
-    super
-  end
-end   end ```
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code>  <span class="k">if</span> <span class="no">Rails</span><span class="p">.</span><span class="nf">env</span> <span class="o">==</span> <span class="s2">"staging"</span>
+    <span class="n">rescue_from</span> <span class="no">ActionDispatch</span><span class="ss">:RoutingError</span><span class="p">,</span> <span class="ss">:handle_routing_error</span>
+
+    <span class="k">def</span> <span class="nf">handle_routing_error</span>
+      <span class="k">if</span> <span class="n">current_user</span><span class="p">.</span><span class="nf">nil?</span>
+        <span class="n">redirect_to</span> <span class="n">new_user_sessions_url</span>
+      <span class="k">else</span>
+        <span class="k">super</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
 </code></pre>
 </div>
 
@@ -115,50 +117,50 @@ end   end ```
 
 <p><a name="tl-dr-secure404"></a></p>
 
-<p>```ruby staging_exception_handler.rb
-  class StagingExceptionHandler</p>
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code>  <span class="k">class</span> <span class="nc">StagingExceptionHandler</span>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>def initialize(app)
-  @app = app
-end
+    <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+      <span class="vi">@app</span> <span class="o">=</span> <span class="n">app</span>
+    <span class="k">end</span>
+    
+    <span class="k">def</span> <span class="nf">call</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+      <span class="n">user_id</span> <span class="o">=</span> <span class="n">env</span><span class="p">[</span><span class="s2">"rack.session"</span><span class="p">][</span><span class="s2">"user_credentials_id"</span><span class="p">]</span>
+      <span class="n">code</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">response</span> <span class="o">=</span> <span class="vi">@app</span><span class="p">.</span><span class="nf">call</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
+      <span class="k">if</span> <span class="n">user_id</span><span class="p">.</span><span class="nf">blank?</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="mi">400</span><span class="p">.</span><span class="nf">.</span><span class="mi">599</span><span class="p">).</span><span class="nf">include?</span><span class="p">(</span><span class="n">code</span><span class="p">.</span><span class="nf">to_i</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="s1">'401'</span><span class="p">,</span> <span class="p">{</span><span class="s1">'Content-Type'</span> <span class="o">=&gt;</span> <span class="s1">'text/html'</span><span class="p">},</span> <span class="p">[</span><span class="s2">"(</span><span class="si">#{</span><span class="n">code</span><span class="si">}</span><span class="s2">) Danny's not here, Mrs. Torrance."</span><span class="p">]]</span>  
+      <span class="k">end</span>
 
-def call(env)
-  user_id = env["rack.session"]["user_credentials_id"]
-  code, _, _ = response = @app.call(env)
-  if user_id.blank? &amp;&amp; (400..599).include?(code.to_i)
-    return ['401', {'Content-Type' =&gt; 'text/html'}, ["(#{code}) Danny's not here, Mrs. Torrance."]]  
-  end
-
-  return response
-end   end ```
+      <span class="k">return</span> <span class="n">response</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
 </code></pre>
 </div>
 
-<p>Then, to use this, in config/application.rb:</p>
+<p>Then, to use this, in <code class="highlighter-rouge">config/application.rb</code>:</p>
 
-<p>```ruby config/application.rb
-  require “#{Rails.root}/lib/staging_exception_handler.rb”
-  config.middleware.use StagingExceptionHandler</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>
-By declaring that we want to `use StagingExceptionHandler`, we're getting Rails to insert this class into our middleware chain (type `rake middleware` to inspect the list). Middleware is called (using the `:call` method) from the outside in; the normal mode of operation is that each middleware instance calls the next (as we are doing with `response = @app.call(env)`) unitl you get to your app. The return value, which is an array of the status code, response header Hash, and response body Array, bubbles up the middleware stack until it gets back to the outer layer and produces a response that your server can deliver.
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code>  <span class="nb">require</span> <span class="s2">"</span><span class="si">#{</span><span class="no">Rails</span><span class="p">.</span><span class="nf">root</span><span class="si">}</span><span class="s2">/lib/staging_exception_handler.rb"</span>
+  <span class="n">config</span><span class="p">.</span><span class="nf">middleware</span><span class="p">.</span><span class="nf">use</span> <span class="no">StagingExceptionHandler</span>
+</code></pre>
+</div>
 
-Here, we're pretty much doing just that: passing the response of the next middleware (stored in `@app`) back as our own return value. However, we have one rule. If the response code is any error or bad request and the user is not logger in, we simply display a rather unhelpful message.
+<p>By declaring that we want to <code class="highlighter-rouge">use StagingExceptionHandler</code>, we’re getting Rails to insert this class into our middleware chain (type <code class="highlighter-rouge">rake middleware</code> to inspect the list). Middleware is called (using the <code class="highlighter-rouge">:call</code> method) from the outside in; the normal mode of operation is that each middleware instance calls the next (as we are doing with <code class="highlighter-rouge">response = @app.call(env)</code>) unitl you get to your app. The return value, which is an array of the status code, response header Hash, and response body Array, bubbles up the middleware stack until it gets back to the outer layer and produces a response that your server can deliver.</p>
 
-When we have a bad route, the response returned by our app is
+<p>Here, we’re pretty much doing just that: passing the response of the next middleware (stored in <code class="highlighter-rouge">@app</code>) back as our own return value. However, we have one rule. If the response code is any error or bad request and the user is not logger in, we simply display a rather unhelpful message.</p>
 
-`[404, {"X-Cascade"=&gt;"pass"}, ["Not Found"]]`
+<p>When we have a bad route, the response returned by our app is</p>
 
-On the other hand, when we have a valid route with no errors, we get
+<p><code class="highlighter-rouge">[404, {"X-Cascade"=&gt;"pass"}, ["Not Found"]]</code></p>
 
-```ruby
-  [
-    200,
-    {"X-Frame-Options"=&gt;"SAMEORIGIN",
-    "X-XSS-Protection"=&gt;"1; mode=block",
-    "X-Content-Type-Options"=&gt;"nosniff",
-    "Content-Type"=&gt;"text/html; charset=utf-8"},
-    ...skipping response body...
-  ]
+<p>On the other hand, when we have a valid route with no errors, we get</p>
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code>  <span class="p">[</span>
+    <span class="mi">200</span><span class="p">,</span>
+    <span class="p">{</span><span class="s2">"X-Frame-Options"</span><span class="o">=&gt;</span><span class="s2">"SAMEORIGIN"</span><span class="p">,</span>
+    <span class="s2">"X-XSS-Protection"</span><span class="o">=&gt;</span><span class="s2">"1; mode=block"</span><span class="p">,</span>
+    <span class="s2">"X-Content-Type-Options"</span><span class="o">=&gt;</span><span class="s2">"nosniff"</span><span class="p">,</span>
+    <span class="s2">"Content-Type"</span><span class="o">=&gt;</span><span class="s2">"text/html; charset=utf-8"</span><span class="p">},</span>
+    <span class="p">.</span><span class="nf">.</span><span class="p">.</span><span class="nf">skipping</span> <span class="n">response</span> <span class="n">body</span><span class="p">.</span><span class="nf">.</span><span class="o">.</span>
+  <span class="p">]</span>
 </code></pre>
 </div>
 
